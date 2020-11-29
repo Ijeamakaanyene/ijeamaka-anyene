@@ -1,19 +1,19 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Ijeamaka Anyene",
-    "description": "Welcome to our new blog, Ijeamaka Anyene. We hope you enjoy \nreading what we have to say!",
+    "title": "Welcome to my personal site",
+    "description": "This is a test post!",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Ijeamaka Anyene",
+        "url": {}
       }
     ],
     "date": "2020-11-29",
     "categories": [],
-    "contents": "\n\n\n\n",
+    "contents": "\nWelcome to my new blog. Hopefully there are additional posts after this one. Here is a picture of Waffles as a little treat.\n\n\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-11-29T12:37:54-08:00",
-    "input_file": {}
+    "last_modified": "2020-11-29T14:02:58-08:00",
+    "input_file": "welcome.utf8.md"
   }
 ]
