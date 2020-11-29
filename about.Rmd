@@ -1,11 +1,14 @@
 ---
 title: "Hey! I'm Ije"
-description: |
-  Some additional details about the blog
 ---
+
+```{r, echo = FALSE, eval = TRUE, out.width= "75%", fig.align='left'}
+knitr::include_graphics(here::here("personal_picture.jpeg"))
+```
+
 
 I'm a data analyst working in healthcare research and I have a masters in public health in epidemiology and biostatistics from U.C. Berkeley.  
 
-I'm currently working on boosting my SAS & R skills, focusing mostly on R. For work and leisure, I use R for data analysis, statistical modeling, and visualization. 
+I specialize in using R and SAS for data analysis, statistical modeling, and data visualizations. 
 
-In an effort to practice "learning out loud" 
+In an effort to practice "learning out loud", I decided to share short & quick blog posts (#TIL) of my learnings as I tackle projects. 

@@ -6,8 +6,6 @@ output_dir: "_site"
 navbar:
   right:
     - text: "Home"
-      href: index.html
-    - text: "About"
       href: about.html
     - text: "Blog Posts"
       href: index.html
