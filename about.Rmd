@@ -1,9 +1,11 @@
 ---
-title: "About this blog"
+title: "Hey! I'm Ije"
 description: |
   Some additional details about the blog
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+I'm a data analyst working in healthcare research and I have a masters in public health in epidemiology and biostatistics from U.C. Berkeley.  
+
+I'm currently working on boosting my SAS & R skills, focusing mostly on R. For work and leisure, I use R for data analysis, statistical modeling, and visualization. 
+
+In an effort to practice "learning out loud" 
