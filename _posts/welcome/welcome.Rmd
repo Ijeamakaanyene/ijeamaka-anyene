@@ -1,0 +1,22 @@
+---
+title: "Welcome to my personal site"
+description: |
+  This is a test post! 
+author:
+  - name: Ijeamaka Anyene
+date: 11-29-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Welcome to my new blog. Hopefully there are additional posts after this one.
+Here is a picture of Waffles as a little treat. 
+
+```{r, echo = FALSE, eval = TRUE, out.width= "75%", fig.align='center'}
+knitr::include_graphics(here::here("_posts", "welcome", "IMG-2982.jpg"))
+```
+
+
+
+
