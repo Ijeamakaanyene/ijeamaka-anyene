@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Ijeamaka Anyene</title>
+    <link>https://ijeamaka-anyene.netlify.app/</link>
+    <atom:link href="https://ijeamaka-anyene.netlify.app/blog_posts.xml" rel="self" type="application/rss+xml"/>
+    <description>Ijeamaka Anyene's personal website
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to my personal site</title>
+      <dc:creator>Ijeamaka Anyene</dc:creator>
+      <link>https://ijeamaka-anyene.netlify.app/posts/welcome</link>
+      <description>This is a test post!</description>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/welcome</guid>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://ijeamaka-anyene.netlify.app/posts/welcome/IMG-2982.jpg" medium="image" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

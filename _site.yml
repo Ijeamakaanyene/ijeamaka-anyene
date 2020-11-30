@@ -1,12 +1,16 @@
 name: "distill-site"
 title: "Ijeamaka Anyene"
 description: |
-  Ijeamaka Anyene
+  Ijeamaka Anyene's personal website
+base_url: https://ijeamaka-anyene.netlify.app/
 output_dir: "_site"
 navbar:
   right:
     - text: "Home"
+      href: index.html
+    - text: "About Me"
       href: about.html
     - text: "Blog Posts"
-      href: index.html
+      href: blog_posts.html
 output: distill::distill_article
+theme: theme.css

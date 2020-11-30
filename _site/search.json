@@ -2,18 +2,24 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "About Me",
+      "author": [],
+      "contents": "\nWhere I’ve been\nEducation\n* Bachelor’s degree from Yale University\n* Master’s degree from U.C. Berkeley School of Public Health\nExperience\n* Analyst at Kaiser Permanente Division of Research\n* Consumer Insights at Curology\n* Operations Associate & Senior Operations Associate at Collective Health\nWhat I’ve done\nTo be updated!\n\n\n\n",
+      "last_modified": "2020-11-29T17:00:59-08:00"
+    },
+    {
+      "path": "blog_posts.html",
+      "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-11-29T12:37:55-08:00"
+      "last_modified": "2020-11-29T17:00:59-08:00"
     },
     {
       "path": "index.html",
-      "title": "Ijeamaka Anyene",
+      "title": "Hey! I'm Ije",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2020-11-29T12:37:55-08:00"
+      "contents": "\n\n\n\nI’m a data analyst working in healthcare research and I have a masters in public health in epidemiology and biostatistics from U.C. Berkeley.\nI specialize in using R and SAS for data analysis, statistical modeling, and data visualizations.\nIn an effort to practice “learning out loud”, I decided to share short & quick blog posts (#TIL) of my learnings as I tackle projects.\n\n\n\n",
+      "last_modified": "2020-11-29T17:01:00-08:00"
     }
   ],
   "collections": ["posts/posts.json"]
