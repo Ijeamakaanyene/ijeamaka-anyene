@@ -3,14 +3,14 @@ title: "Hey! I'm Ije"
 site: distill::distill_website
 ---
 
-```{r, echo = FALSE, eval = TRUE, out.width="55%", out.extra='style="float:left; padding:5px"'}
+
+```{r, echo = FALSE, eval = TRUE, out.width="40%", out.extra='style="float:left; padding:5px"'}
 knitr::include_graphics(here::here("personal_picture_copy.png"))
 ```
-
-
+     
 I'm a data analyst working in healthcare research and I have a masters in public health in epidemiology and biostatistics from U.C. Berkeley.  
 
 I specialize in using R and SAS for data analysis, statistical modeling, and data visualizations. 
 
-In an effort to practice "learning out loud", I decided to share short & quick blog posts (#TIL) of my learnings as I tackle projects. 
+In an effort to practice "learning out loud", I'm sharing short & quick blog posts (#TIL) of my learnings as I tackle projects. Check them out on the blog posts page!
 
