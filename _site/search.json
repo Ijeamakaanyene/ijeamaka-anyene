@@ -1,25 +1,18 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About Me",
-      "author": [],
-      "contents": "\nWhere I’ve been\nEducation\n* Bachelor’s degree from Yale University\n* Master’s degree from U.C. Berkeley School of Public Health\nExperience\n* Analyst at Kaiser Permanente Division of Research\n* Consumer Insights at Curology\n* Operations Associate & Senior Operations Associate at Collective Health\nWhat I’ve done\nTo be updated!\n\n\n\n",
-      "last_modified": "2020-11-29T17:18:47-08:00"
-    },
-    {
       "path": "blog_posts.html",
       "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-11-29T17:18:48-08:00"
+      "last_modified": "2020-11-29T18:27:04-08:00"
     },
     {
       "path": "index.html",
-      "title": "Hey! I'm Ije",
+      "title": "Hey there!",
       "author": [],
-      "contents": "\n\n\n\nI’m a data analyst working in healthcare research and I have a masters in public health in epidemiology and biostatistics from U.C. Berkeley.\nI specialize in using R and SAS for data analysis, statistical modeling, and data visualizations.\nIn an effort to practice “learning out loud”, I’m sharing short & quick blog posts (#TIL) of my learnings as I tackle projects. Check them out on the blog posts page!\n\n\n\n",
-      "last_modified": "2020-11-29T17:18:48-08:00"
+      "contents": "\n\n\n\nAbout Me\nI am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, statistical modeling, and data visualizations.\nEducation\nMPH in Epidemiology & Biostatistics\nU.C. Berkeley School of Public Health, 2020\nBA in Environmental Studies\nYale University, 2015\nRecent Roles\nAnalyst\nKaiser Permanente Division of Research\nConsumer Insights\nCurology\nOperations Associate,Senior Operations Associate\nCollective Health\n\n\n\n",
+      "last_modified": "2020-11-29T18:27:04-08:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -8,9 +8,11 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About Me"
-      href: about.html
     - text: "Blog Posts"
       href: blog_posts.html
+    - icon: fa fa-twitter
+      href: https://twitter.com/ijeamaka_a
+    - icon: fa fa-github
+      href: https://github.com/Ijeamakaanyene
 output: distill::distill_article
 theme: theme.css
