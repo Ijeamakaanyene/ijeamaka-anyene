@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/2020-12-08-tidytuesday/",
+    "title": "TidyTuesday",
+    "description": "A #R4DS Weekly Challenge",
+    "author": [
+      {
+        "name": "Ijeamaka Anyene",
+        "url": "https://twitter.com/ijeamaka_a"
+      }
+    ],
+    "date": "2020-12-08",
+    "categories": [
+      "data visualization",
+      "portfolio"
+    ],
+    "contents": "\nTidyTuesday\nTidyTuesday is a weekly social data project in R - hosted by the R4DS Online Learning Community. The intent of Tidy Tuesday is to provide a safe community to practice your wrangling and data visualization skills. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.\nAll of my contributions + code can be found here.\nSome Personal (& Recent) Favorites\nToronto Shelters - Data Source: {opendatatoronto}\n\n\n\nWashington Trails - Data Source: WTA\n\n\nExtinct Plants - Data Source: IUCN Red List\n\n\n\nAvatar: The Last Airbender - Data Source: {appa}\n\n\n\n\n\n\n",
+    "preview": "https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png",
+    "last_modified": "2020-12-08T22:56:37-08:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to my personal site",
     "description": "This is a test post!",
@@ -14,6 +34,26 @@
     "contents": "\nWelcome to my new blog. Hopefully there are additional posts after this one. Here is a picture of Waffles as a little treat.\n\n\n\n\n\n\n",
     "preview": "posts/welcome/IMG-2982.jpg",
     "last_modified": "2020-11-29T14:02:58-08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2020-04-16-covid-19-visualization/",
+    "title": "COVID-19 Visualization",
+    "description": "An infectious disease natural history primer for the public",
+    "author": [
+      {
+        "name": "Ijeamaka Anyene",
+        "url": "https://twitter.com/ijeamaka_a"
+      }
+    ],
+    "date": "2020-04-16",
+    "categories": [
+      "data visualization",
+      "portfolio"
+    ],
+    "contents": "\nManaging the COVID-19 Pandemic Course\nU.C. Berkeley School of Public Health has an online, self-paced course to provide the public a comprehensive understanding of the COVID-19 pandemic.\nAs part of this course, Dr. Sandi McCoy gave a lecture regarding proven interventions and and what we know works. To support this presentation, I created a visualization how the natural history of some of the most commonly known pathogens changes the mitigation and control strategies that are effective.\n\n\n\nThis course can be found here.\n\n\n\n",
+    "preview": "https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png",
+    "last_modified": "2020-12-08T23:24:02-08:00",
     "input_file": {}
   }
 ]
