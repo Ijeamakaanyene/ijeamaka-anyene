@@ -5,7 +5,7 @@
       "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-08T23:25:19-08:00"
+      "last_modified": "2020-12-17T21:10:07-08:00"
     },
     {
       "path": "index.html",
@@ -19,7 +19,7 @@
       "title": "Portfolio",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-08T23:24:13-08:00"
+      "last_modified": "2020-12-17T21:34:17-08:00"
     }
   ],
   "collections": ["posts/posts.json"]

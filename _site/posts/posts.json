@@ -16,7 +16,7 @@
     ],
     "contents": "\nTidyTuesday\nTidyTuesday is a weekly social data project in R - hosted by the R4DS Online Learning Community. The intent of Tidy Tuesday is to provide a safe community to practice your wrangling and data visualization skills. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.\nAll of my contributions + code can be found here.\nSome Personal (& Recent) Favorites\nToronto Shelters - Data Source: {opendatatoronto}\n\n\n\nWashington Trails - Data Source: WTA\n\n\nExtinct Plants - Data Source: IUCN Red List\n\n\n\nAvatar: The Last Airbender - Data Source: {appa}\n\n\n\n\n\n\n",
     "preview": "https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png",
-    "last_modified": "2020-12-08T22:56:37-08:00",
+    "last_modified": "2020-12-08T23:32:47-08:00",
     "input_file": {}
   },
   {
@@ -34,6 +34,26 @@
     "contents": "\nWelcome to my new blog. Hopefully there are additional posts after this one. Here is a picture of Waffles as a little treat.\n\n\n\n\n\n\n",
     "preview": "posts/welcome/IMG-2982.jpg",
     "last_modified": "2020-11-29T14:02:58-08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",
+    "title": "Workshop: An Introduction to ggplot2",
+    "description": "A workshop created for Data Visualization Week originally for my workplace.",
+    "author": [
+      {
+        "name": "Ijeamaka Anyene",
+        "url": "https://twitter.com/ijeamaka_a"
+      }
+    ],
+    "date": "2020-10-22",
+    "categories": [
+      "workshops",
+      "portfolio"
+    ],
+    "contents": "\nIntroduction to ggplot\nEvent: Data Visualization Week @ Kaiser DORDate: October 22nd, 2020Github Source Code Slides Link\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-17T21:10:07-08:00",
     "input_file": {}
   },
   {
