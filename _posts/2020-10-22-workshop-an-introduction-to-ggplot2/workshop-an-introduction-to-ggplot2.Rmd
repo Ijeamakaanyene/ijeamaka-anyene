@@ -1,0 +1,24 @@
+---
+title: "Workshop: An Introduction to ggplot2"
+description: |
+  A workshop created for Data Visualization Week originally for my workplace.
+author:
+  - name: Ijeamaka Anyene
+    url: https://twitter.com/ijeamaka_a
+date: 10-22-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+categories:
+  - workshops
+  - portfolio
+---
+
+
+## Introduction to ggplot 
+  
+**Event:** Data Visualization Week @ Kaiser DOR  
+**Date:** October 22nd, 2020  
+[Github Source Code](https://github.com/Ijeamakaanyene/intro-to-ggplot2)
+[Slides Link](https://ijeamakaanyene.github.io/intro-to-ggplot2/ggplot_presentation.html)
