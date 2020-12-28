@@ -20,23 +20,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to my personal site",
-    "description": "This is a test post!",
-    "author": [
-      {
-        "name": "Ijeamaka Anyene",
-        "url": {}
-      }
-    ],
-    "date": "2020-11-29",
-    "categories": [],
-    "contents": "\nWelcome to my new blog. Hopefully there are additional posts after this one. Here is a picture of Waffles as a little treat.\n\n\n\n\n\n\n",
-    "preview": "posts/welcome/IMG-2982.jpg",
-    "last_modified": "2020-11-29T14:02:58-08:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",
     "title": "Workshop: An Introduction to ggplot2",
     "description": "A workshop created for Data Visualization Week originally for my workplace.",
