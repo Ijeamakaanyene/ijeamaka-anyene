@@ -20,22 +20,13 @@
       <media:content url="https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png" medium="image" type="image/png"/>
     </item>
     <item>
-      <title>Welcome to my personal site</title>
-      <dc:creator>Ijeamaka Anyene</dc:creator>
-      <link>https://ijeamaka-anyene.netlify.app/posts/welcome</link>
-      <description>This is a test post!</description>
-      <guid>https://ijeamaka-anyene.netlify.app/posts/welcome</guid>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://ijeamaka-anyene.netlify.app/posts/welcome/IMG-2982.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
       <title>Workshop: An Introduction to ggplot2</title>
       <dc:creator>Ijeamaka Anyene</dc:creator>
-      <link>https://ijeamaka-anyene.netlify.app/posts/2020-12-17-workshop-an-introduction-to-ggplot2</link>
+      <link>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2</link>
       <description>A workshop created for Data Visualization Week originally for my workplace.</description>
       <category>workshops</category>
       <category>portfolio</category>
-      <guid>https://ijeamaka-anyene.netlify.app/posts/2020-12-17-workshop-an-introduction-to-ggplot2</guid>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2</guid>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
     </item>
     <item>
