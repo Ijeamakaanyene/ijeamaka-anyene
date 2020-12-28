@@ -1,8 +1,8 @@
 ---
 title: "Portfolio"
-listing: 
+listing:
   posts:
+    - 2020-10-22-workshop-an-introduction-to-ggplot2
     - 2020-12-08-tidytuesday
     - 2020-04-16-covid-19-visualization
-    - 2020-10-22-workshop-an-introduction-to-ggplot2
 ---

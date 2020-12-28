@@ -2,23 +2,35 @@
 title: "Hey there!"
 site: distill::distill_website
 ---
-
-
-```{r, echo = FALSE, eval = TRUE, out.width="40%", out.extra='style="float:left; padding:5px"'}
+<div class = "container">
+  <div class = "pull-left">
+```{r, echo = FALSE, eval = TRUE, out.width="80%", fig.align='center'}
 knitr::include_graphics(here::here("personal_picture_copy.png"))
 ```
-     
-### About Me
-I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, statistical modeling, and data visualizations. 
 
+<center>**Ijeamaka Anyene**  
+*Data Analyst* </center>
+  </div>
+  
+  <div class = "pull-right">
+Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about knowledge sharing / dissemination and picking up (and putting down) a multitude of side projects. Check out my most recent projects in my Portfolio tab. 
+
+  </div>
+</div>
+<br>
+<br>
+
+## Background
+<div class = "container">
+  <div class = "pull-left">
 ### Education
 **MPH in Epidemiology & Biostatistics**  
 U.C. Berkeley School of Public Health, 2020  
   
 **BA in Environmental Studies**  
-Yale University, 2015  
-  
-  
+Yale University, 2015
+  </div>
+  <div class = "pull-right">
 ### Recent Roles  
 **Analyst**  
 Kaiser Permanente Division of Research  
@@ -26,8 +38,9 @@ Kaiser Permanente Division of Research
 **Consumer Insights**  
 Curology  
 
-**Operations Associate,**  
-**Senior Operations Associate**  
-Collective Health 
-
+**Senior Operations Associate,**  
+**Operations Associate**       
+Collective Health  
+  </div>
+</div>
 

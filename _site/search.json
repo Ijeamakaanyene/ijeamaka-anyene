@@ -11,15 +11,15 @@
       "path": "index.html",
       "title": "Hey there!",
       "author": [],
-      "contents": "\n\n\n\nAbout Me\nI am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, statistical modeling, and data visualizations.\nEducation\nMPH in Epidemiology & Biostatistics\nU.C. Berkeley School of Public Health, 2020\nBA in Environmental Studies\nYale University, 2015\nRecent Roles\nAnalyst\nKaiser Permanente Division of Research\nConsumer Insights\nCurology\nOperations Associate,Senior Operations Associate\nCollective Health\n\n\n\n",
-      "last_modified": "2020-12-08T23:25:31-08:00"
+      "contents": "\n\n\n\n\n\n\nIjeamaka AnyeneData Analyst\n\n\n\nWelcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about knowledge sharing / dissemination and picking up (and putting down) a multitude of side projects. Check out my most recent projects in my Portfolio tab.\n\n\n\nBackground\n\n\nEducation\nMPH in Epidemiology & Biostatistics\nU.C. Berkeley School of Public Health, 2020\nBA in Environmental Studies\nYale University, 2015\n\n\nRecent Roles\nAnalyst\nKaiser Permanente Division of Research\nConsumer Insights\nCurology\nSenior Operations Associate,Operations Associate\nCollective Health\n\n\n\n\n",
+      "last_modified": "2020-12-28T11:59:47-08:00"
     },
     {
       "path": "portfolio.html",
       "title": "Portfolio",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-17T21:34:17-08:00"
+      "last_modified": "2020-12-26T17:03:41-08:00"
     }
   ],
   "collections": ["posts/posts.json"]
