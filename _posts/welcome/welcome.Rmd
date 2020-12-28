@@ -8,6 +8,7 @@ date: 11-29-2020
 output:
   distill::distill_article:
     self_contained: false
+draft: true
 ---
 
 Welcome to my new blog. Hopefully there are additional posts after this one.
