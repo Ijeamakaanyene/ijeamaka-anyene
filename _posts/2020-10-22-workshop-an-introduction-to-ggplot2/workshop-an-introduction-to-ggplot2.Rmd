@@ -1,11 +1,12 @@
 ---
 title: "Workshop: An Introduction to ggplot2"
 description: |
-  A workshop created for Data Visualization Week originally for my workplace.
+  A workshop created for Kaiser Permanente's Division of Research Data Visualization Week.
 author:
   - name: Ijeamaka Anyene
     url: https://twitter.com/ijeamaka_a
 date: 10-22-2020
+preview: ggplot-presentation-22.png
 output:
   distill::distill_article:
     self_contained: false
@@ -17,8 +18,32 @@ categories:
 
 
 ## Introduction to ggplot 
-  
-**Event:** Data Visualization Week @ Kaiser DOR  
+```{r, metathis, echo = FALSE}
+library(metathis)
+
+meta() %>%
+  meta_name("github-repo" = "Ijeamakaanyene/intro-to-ggplot2") %>%
+  meta_social(
+    title = "Introduction to ggplot2: Data Visualization Week 2020",
+    description = "An introduction to ggplot2 and the concept of grammar of graphics",
+    url = "Introduction to ggplot2
+Data Visualization Week 2020",
+    image = "https://github.com/Ijeamakaanyene/intro-to-ggplot2/blob/gh-pages/supplemental_graphics/layered_graphics.png",
+    image_alt = "Title slide of Introduction to ggplot2",
+    og_type = "website",
+    og_author = "Ijeamaka Anyene",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ijeamaka_a"
+  )
+
+```
+
+```{r xaringan-slides, echo = FALSE}
+xaringanExtra::embed_xaringan(url = "https://ijeamakaanyene.github.io/intro-to-ggplot2/ggplot_presentation.html",
+                              ratio = "16:9")
+
+```
+
+**Event:** Data Visualization Week @ Kaiser Division of Research  
 **Date:** October 22nd, 2020  
 [Github Source Code](https://github.com/Ijeamakaanyene/intro-to-ggplot2)
-[Slides Link](https://ijeamakaanyene.github.io/intro-to-ggplot2/ggplot_presentation.html)

@@ -22,7 +22,7 @@
   {
     "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",
     "title": "Workshop: An Introduction to ggplot2",
-    "description": "A workshop created for Data Visualization Week originally for my workplace.",
+    "description": "A workshop created for Kaiser Permanente's Division of Research Data Visualization Week.",
     "author": [
       {
         "name": "Ijeamaka Anyene",
@@ -34,9 +34,9 @@
       "workshops",
       "portfolio"
     ],
-    "contents": "\nIntroduction to ggplot\nEvent: Data Visualization Week @ Kaiser DORDate: October 22nd, 2020Github Source Code Slides Link\n\n\n\n",
+    "contents": "\nIntroduction to ggplot\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: Data Visualization Week @ Kaiser Division of ResearchDate: October 22nd, 2020Github Source Code\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-12-17T21:10:07-08:00",
+    "last_modified": "2021-01-01T15:49:03-08:00",
     "input_file": {}
   },
   {
