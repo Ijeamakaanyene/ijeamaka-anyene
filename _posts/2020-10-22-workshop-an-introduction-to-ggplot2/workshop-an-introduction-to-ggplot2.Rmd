@@ -6,7 +6,7 @@ author:
   - name: Ijeamaka Anyene
     url: https://twitter.com/ijeamaka_a
 date: 10-22-2020
-preview: ggplot-presentation-22.png
+preview: ggplot_presentation_slide_image.png
 output:
   distill::distill_article:
     self_contained: false
@@ -39,6 +39,12 @@ Data Visualization Week 2020",
 ```
 
 ```{r xaringan-slides, echo = FALSE}
+xaringanExtra::use_share_again()
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter")
+)
+
 xaringanExtra::embed_xaringan(url = "https://ijeamakaanyene.github.io/intro-to-ggplot2/ggplot_presentation.html",
                               ratio = "16:9")
 

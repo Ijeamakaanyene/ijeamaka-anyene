@@ -34,10 +34,12 @@
       "workshops",
       "portfolio"
     ],
-    "contents": "\nIntroduction to ggplot\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: Data Visualization Week @ Kaiser Division of ResearchDate: October 22nd, 2020Github Source Code\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-01-01T15:49:03-08:00",
-    "input_file": {}
+    "contents": "\nIntroduction to ggplot\n\n\n\n\npreserve412c14c9fc3cb308preserve73e7894ce9691445\n\nEvent: Data Visualization Week @ Kaiser Division of ResearchDate: October 22nd, 2020Github Source Code\n\n\n\n",
+    "preview": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/ggplot_presentation_slide_image.png",
+    "last_modified": "2021-01-01T16:00:27-08:00",
+    "input_file": "workshop-an-introduction-to-ggplot2.utf8.md",
+    "preview_width": 1891,
+    "preview_height": 1064
   },
   {
     "path": "posts/2020-04-16-covid-19-visualization/",
