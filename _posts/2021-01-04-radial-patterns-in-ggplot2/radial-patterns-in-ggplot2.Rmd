@@ -1,0 +1,55 @@
+---
+title: "Radial Patterns in ggplot2"
+description: |
+  A love letter to coord_polar() masquerading as a #rstats zine
+author:
+  - name: Ijeamaka Anyene
+    url: https://twitter.com/ijeamaka_a
+date: 01-04-2021
+draft: FALSE
+preview: patterns_cover_3.png
+twitter:
+    creator: "@ijeamaka_a"
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - portfolio
+  - computational art
+---
+
+```{r, metathis, echo = FALSE}
+library(metathis)
+
+meta() %>%
+  meta_name("github-repo" = "Ijeamakaanyene/patterns") %>%
+  meta_social(
+    title = "Radial Patterns in ggplot2",
+    description = "A love letter to coord_polar() masquerading as a #rstats zine",
+    url = "https://ijeamakaanyene.github.io/patterns/zine/zine_radial_patterns.html",
+    image = "https://raw.githubusercontent.com/patterns/gh-pages/zine/addtl_images/patterns_cover_3.png",
+    image_alt = "Title slide of Radial Patterns in ggplot2",
+    og_type = "website",
+    og_author = "Ijeamaka Anyene",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ijeamaka_a"
+  )
+
+```
+
+This is my #rstats zine of 30 unique computational art pieces with accompanying code deep diving into radial objects. They are categorized by themes, but the order of completion is also indicated. All of these are created solely using `{ggplot2}` in R and the zine was created using the `{xaringan}` package.
+
+```{r xaringan-slides, echo = FALSE}
+xaringanExtra::embed_xaringan(url = "https://ijeamakaanyene.github.io/patterns/zine/zine_radial_patterns.html",
+                              ratio = "16:9")
+
+```
+
+<br>
+The art in this project is released under a [CC BY-NC-SA 4.0 Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/) license. More details of usage can be found there. In summary, you can copy and redistribute and are free to build upon the material as long as you give me credit. However, you cannot use for commercial purposes without contacting me.
+
+<br> **Additional Info**  
+[Link to PDF Version](https://raw.githubusercontent.com/Ijeamakaanyene/patterns/gh-pages/zine/zine_radial_patterns.pdf)  
+[Source Code](https://github.com/Ijeamakaanyene/patterns)  
+
+
