@@ -26,24 +26,24 @@ All of my contributions + code can be found [here](https://github.com/Ijeamakaan
 ## Some Personal (& Recent) Favorites
   
 **Toronto Shelters - Data Source: {opendatatoronto}**
-```{r, out.width = "80%"}
+```{r, out.width = "90%"}
 knitr::include_graphics("https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png")
 
 ```
   
 **Washington Trails - Data Source: WTA**  
-```{r, out.width = "80%"}
+```{r, out.width = "90%"}
 knitr::include_graphics("https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-18_trails.png")
 
 ```
   
 **Extinct Plants - Data Source: IUCN Red List**
-```{r, out.width = "80%"}
+```{r, out.width = "90%"}
 knitr::include_graphics("https://raw.githubusercontent.com/Ijeamakaanyene/data_visualizations/master/outputs/2020-17_plants_in_danger.png")
 ```
 
 **Avatar: The Last Airbender - Data Source: {appa}**
-```{r, out.width = "80%"}
+```{r, out.width = "90%"}
 knitr::include_graphics("https://raw.githubusercontent.com/Ijeamakaanyene/data_visualizations/master/outputs/2020-16_avatar.png")
 ```
 
