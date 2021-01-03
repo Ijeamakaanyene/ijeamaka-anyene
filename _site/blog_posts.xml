@@ -7,7 +7,18 @@
     <description>Ijeamaka Anyene's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Radial Patterns in ggplot2</title>
+      <dc:creator>Ijeamaka Anyene</dc:creator>
+      <link>https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2</link>
+      <description>A love letter to coord_polar() masquerading as a #rstats zine</description>
+      <category>portfolio</category>
+      <category>computational art</category>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2</guid>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/patterns_cover_3.png" medium="image" type="image/png" width="5100" height="2700"/>
+    </item>
     <item>
       <title>TidyTuesday</title>
       <dc:creator>Ijeamaka Anyene</dc:creator>
