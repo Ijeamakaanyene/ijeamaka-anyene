@@ -1,12 +1,15 @@
 ---
 title: "COVID-19 Visualization"
 description: |
-  An infectious disease natural history primer for the public
+  A visualization of infectious disease natural history for the public
 author:
   - name: Ijeamaka Anyene
     url: https://twitter.com/ijeamaka_a
 date: 04-16-2020
 always_allow_html: true
+base_url: https://ijeamaka-anyene.netlify.app/
+twitter:
+    creator: "@ijeamaka_a"
 output:
   distill::distill_article:
     self_contained: false
