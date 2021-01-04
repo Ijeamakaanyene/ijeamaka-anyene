@@ -12,11 +12,11 @@ navbar:
       href: portfolio.html
     - text: "Blog Posts"
       href: blog_posts.html
-    - icon: fa fa-twitter
+    - icon: fab fa-twitter
       href: https://twitter.com/ijeamaka_a
-    - icon: fa fa-github
+    - icon: fab fa-github
       href: https://github.com/Ijeamakaanyene
-    - icon: fa fa-linkedin-in
+    - icon: fab fa-linkedin-in
       href: https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/
 collections:
   posts:
