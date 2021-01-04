@@ -6,9 +6,11 @@ author:
   - name: Ijeamaka Anyene
     url: https://twitter.com/ijeamaka_a
 date: 01-04-2021
+base_url: https://ijeamaka-anyene.netlify.app
 draft: FALSE
 preview: patterns_cover_3.png
 twitter:
+    site: "@ijeamaka_a"
     creator: "@ijeamaka_a"
 output:
   distill::distill_article:
@@ -27,7 +29,7 @@ meta() %>%
     title = "Radial Patterns in ggplot2",
     description = "A love letter to coord_polar() masquerading as a #rstats zine",
     url = "https://ijeamakaanyene.github.io/patterns/zine/zine_radial_patterns.html",
-    image = "https://raw.githubusercontent.com/patterns/gh-pages/zine/addtl_images/patterns_cover_3.png",
+    image = "https://raw.githubusercontent.com/Ijeamakaanyene/patterns/main/zine/addtl_images/patterns_cover_3.png",
     image_alt = "Title slide of Radial Patterns in ggplot2",
     og_type = "website",
     og_author = "Ijeamaka Anyene",
