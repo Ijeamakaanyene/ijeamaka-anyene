@@ -4,6 +4,7 @@ description: |
   Ijeamaka Anyene's personal website
 base_url: https://ijeamaka-anyene.netlify.app/
 output_dir: "_site"
+google_analytics: "G-YNW2MDRE2W"
 navbar:
   right:
     - text: "Home"
