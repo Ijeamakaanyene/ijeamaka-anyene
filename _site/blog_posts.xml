@@ -7,7 +7,19 @@
     <description>Ijeamaka Anyene's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>aRt + ggplot: exploring radial visualizations</title>
+      <dc:creator>Ijeamaka Anyene</dc:creator>
+      <link>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations</link>
+      <description>Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis.</description>
+      <category>portfolio</category>
+      <category>computational art</category>
+      <category>presentation</category>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations</guid>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png" medium="image" type="image/png" width="2799" height="1576"/>
+    </item>
     <item>
       <title>Radial Patterns in ggplot2</title>
       <dc:creator>Ijeamaka Anyene</dc:creator>
@@ -31,11 +43,11 @@
       <media:content url="https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png" medium="image" type="image/png"/>
     </item>
     <item>
-      <title>Workshop: An Introduction to ggplot2</title>
+      <title>An Introduction to ggplot2</title>
       <dc:creator>Ijeamaka Anyene</dc:creator>
       <link>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2</link>
       <description>A workshop created for Kaiser Permanente's Division of Research Data Visualization Week.</description>
-      <category>workshops</category>
+      <category>presentation</category>
       <category>portfolio</category>
       <guid>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2</guid>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
