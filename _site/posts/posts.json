@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/",
+    "title": "aRt + ggplot: exploring radial visualizations",
+    "description": "Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis.",
+    "author": [
+      {
+        "name": "Ijeamaka Anyene",
+        "url": "https://twitter.com/ijeamaka_a"
+      }
+    ],
+    "date": "2021-01-14",
+    "categories": [
+      "portfolio",
+      "computational art",
+      "presentation"
+    ],
+    "contents": "\naRt + ggplot: exploring radial visualizations\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: R-Ladies Johannesburg & Tunis Joint MeetupDate: January 14th, 2021YouTube RecordingGithub Source Code\n\n\n\n",
+    "preview": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png",
+    "last_modified": "2021-01-16T19:36:24-08:00",
+    "input_file": {},
+    "preview_width": 2799,
+    "preview_height": 1576
+  },
+  {
     "path": "posts/2021-01-04-radial-patterns-in-ggplot2/",
     "title": "Radial Patterns in ggplot2",
     "description": "A love letter to coord_polar() masquerading as a #rstats zine",
@@ -14,10 +37,10 @@
       "portfolio",
       "computational art"
     ],
-    "contents": "\n\n\n\nThis is my #rstats zine of 30 unique computational art pieces with accompanying code deep diving into radial objects. They are categorized by themes, but the order of completion is also indicated. All of these are created solely using {ggplot2} in R and the zine was created using the {xaringan} package.\n\npreserve557f689e98f5f459\n\n The art in this project is released under a CC BY-NC-SA 4.0 Creative Commons license. More details of usage can be found there. In summary, you can copy and redistribute and are free to build upon the material as long as you give me credit. However, you cannot use for commercial purposes without contacting me.\nAdditional InfoLink to PDF VersionSource Code\n\n\n\n",
+    "contents": "\n\n\n\nThis is my #rstats zine of 30 unique computational art pieces with accompanying code deep diving into radial objects. They are categorized by themes, but the order of completion is also indicated. All of these are created solely using {ggplot2} in R and the zine was created using the {xaringan} package.\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n The art in this project is released under a CC BY-NC-SA 4.0 Creative Commons license. More details of usage can be found there. In summary, you can copy and redistribute and are free to build upon the material as long as you give me credit. However, you cannot use for commercial purposes without contacting me.\nAdditional InfoLink to PDF VersionSource Code\n\n\n\n",
     "preview": "posts/2021-01-04-radial-patterns-in-ggplot2/patterns_cover_3.png",
-    "last_modified": "2021-01-03T15:56:18-08:00",
-    "input_file": "radial-patterns-in-ggplot2.utf8.md",
+    "last_modified": "2021-01-03T15:56:19-08:00",
+    "input_file": {},
     "preview_width": 5100,
     "preview_height": 2700
   },
@@ -43,7 +66,7 @@
   },
   {
     "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",
-    "title": "Workshop: An Introduction to ggplot2",
+    "title": "An Introduction to ggplot2",
     "description": "A workshop created for Kaiser Permanente's Division of Research Data Visualization Week.",
     "author": [
       {
@@ -53,12 +76,12 @@
     ],
     "date": "2020-10-22",
     "categories": [
-      "workshops",
+      "presentation",
       "portfolio"
     ],
     "contents": "\nIntroduction to ggplot\n\n\n\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: Data Visualization Week @ Kaiser Division of ResearchDate: October 22nd, 2020Github Source Code\n\n\n\n",
     "preview": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/ggplot_presentation_slide_image.png",
-    "last_modified": "2021-01-01T16:00:28-08:00",
+    "last_modified": "2021-01-16T19:39:12-08:00",
     "input_file": {},
     "preview_width": 1891,
     "preview_height": 1064

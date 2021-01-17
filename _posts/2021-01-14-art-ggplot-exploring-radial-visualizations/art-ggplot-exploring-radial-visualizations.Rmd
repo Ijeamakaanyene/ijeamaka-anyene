@@ -1,0 +1,64 @@
+---
+title: "aRt + ggplot: exploring radial visualizations"
+description: |
+  Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis.
+author:
+  - name: Ijeamaka Anyene
+    url: https://twitter.com/ijeamaka_a
+base_url: https://ijeamaka-anyene.netlify.app
+date: 01-14-2021
+preview: cover_image.png
+twitter:
+    site: "@ijeamaka_a"
+    creator: "@ijeamaka_a"
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - portfolio
+  - computational art
+  - presentation
+---
+
+## aRt + ggplot: exploring radial visualizations
+```{r metathis, include = FALSE}
+library(metathis)
+
+meta() %>%
+  meta_name("github-repo" = "Ijeamakaanyene/aRt_ggplot") %>%
+  meta_social(
+    title = "aRt + ggplot: exploring radial visualizations",
+    description = paste0(
+      "Computational art techniques can inform and spice up your data visualizations. ",
+      "Presented at RLadies Johannesburg & Tunis Meetup January 14th, 2021"),
+    url = "https://ijeamakaanyene.github.io/aRt_ggplot/index.html",
+    image = "https://raw.githubusercontent.com/Ijeamakaanyene/aRt_ggplot/main/cover_image.png",
+    image_alt = paste0(
+      "Title slide of aRt + ggplot: exploring radial visualizations ",
+      "Presented at RLadies Johannesburg & Tunis Meetup January 14th, 2021"),
+    og_type = "website",
+    og_author = "Ijeamaka Anyene",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ijeamaka_a",
+    twitter_site = "@ijeamaka_a")
+```
+
+```{r xaringan-slides, echo = FALSE}
+xaringanExtra::use_share_again()
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter")
+)
+
+xaringanExtra::embed_xaringan(url = "https://ijeamakaanyene.github.io/aRt_ggplot/index.html",
+                              ratio = "16:9")
+
+```
+
+**Event:** R-Ladies Johannesburg & Tunis Joint Meetup  
+**Date:** January 14th, 2021  
+[YouTube Recording](https://www.youtube.com/watch?v=h0i6KAahLY8)  
+[Github Source Code](https://github.com/Ijeamakaanyene/aRt_ggplot)  
+
+
+
