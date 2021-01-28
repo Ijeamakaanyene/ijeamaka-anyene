@@ -1,0 +1,29 @@
+---
+title: "Ijeamaka Anyene"
+image: "personal_picture_v2.png"
+links:
+  - label: Twitter
+    url: "https://twitter.com/ijeamaka_a"
+  - label: GitHub
+    url: "https://github.com/Ijeamakaanyene"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
+  - label: Email
+    url: "mailto:ijeamaka.anyene@gmail.com"
+output:
+  postcards::trestles
+---
+
+### Hey There!
+Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects in my Portfolio tab.
+
+### Education
+**MPH in Epidemiology & Biostatistics** | U.C. Berkeley School of Public Health, 2020  
+**BA in Environmental Studies**  | Yale University, 2015
+
+### Recent Roles  
+**Analyst** | Kaiser Permanente Division of Research | Present  
+**Consumer Insights** | Curology | 2019  
+**Senior Operations Associate** | Collective Health | 2018  
+**Operations Associate** | Collective Health | 2016
+

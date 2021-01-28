@@ -5,7 +5,14 @@
       "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-16T20:28:32-08:00"
+      "last_modified": "2021-01-26T22:21:37-08:00"
+    },
+    {
+      "path": "home_page.html",
+      "title": "Ijeamaka Anyene",
+      "author": [],
+      "contents": "\n\n          \n      \n      Ijeamaka Anyene\n      \n      \n      Home\n      Portfolio\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Ijeamaka Anyene\n            \n            \n              \n                \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hey There!\n            Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects in my Portfolio tab.\n            \n            \n            Education\n            MPH in Epidemiology & Biostatistics | U.C. Berkeley School of Public Health, 2020BA in Environmental Studies | Yale University, 2015\n            \n            \n            Recent Roles\n            Analyst | Kaiser Permanente Division of Research | PresentConsumer Insights | Curology | 2019Senior Operations Associate | Collective Health | 2018Operations Associate | Collective Health | 2016\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Ijeamaka Anyene\n            \n            \n              \n                \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              \n              Hey There!\n              Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects in my Portfolio tab.\n              \n              \n              Education\n              MPH in Epidemiology & Biostatistics | U.C. Berkeley School of Public Health, 2020BA in Environmental Studies | Yale University, 2015\n              \n              \n              Recent Roles\n              Analyst | Kaiser Permanente Division of Research | PresentConsumer Insights | Curology | 2019Senior Operations Associate | Collective Health | 2018Operations Associate | Collective Health | 2016\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-01-27T20:44:40-08:00"
     },
     {
       "path": "index.html",
@@ -19,7 +26,7 @@
       "title": "Portfolio",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-16T20:41:12-08:00"
+      "last_modified": "2021-01-27T20:44:46-08:00"
     }
   ],
   "collections": ["posts/posts.json"]

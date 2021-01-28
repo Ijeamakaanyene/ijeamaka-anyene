@@ -8,7 +8,7 @@ google_analytics: "G-YNW2MDRE2W"
 navbar:
   right:
     - text: "Home"
-      href: index.html
+      href: home_page.html
     - text: "Portfolio"
       href: portfolio.html
     - icon: fab fa-twitter
