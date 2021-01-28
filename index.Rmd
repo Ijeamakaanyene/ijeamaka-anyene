@@ -1,46 +1,29 @@
 ---
-title: "Hey there!"
+title: "Ijeamaka Anyene"
+image: "personal_picture_v2.png"
+links:
+  - label: Twitter
+    url: "https://twitter.com/ijeamaka_a"
+  - label: GitHub
+    url: "https://github.com/Ijeamakaanyene"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
+  - label: Email
+    url: "mailto:ijeamaka.anyene@gmail.com"
 site: distill::distill_website
+output:
+  postcards::trestles
 ---
-<div class = "container">
-  <div class = "pull-left">
-```{r, echo = FALSE, eval = TRUE, out.width="80%", fig.align='center'}
-knitr::include_graphics(here::here("personal_picture_copy.png"))
-```
+### Hey There!
+Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects in my Portfolio tab.
 
-<center>**Ijeamaka Anyene**  
-*Data Analyst* </center>
-  </div>
-  
-  <div class = "pull-right">
-Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about knowledge sharing / dissemination and picking up (and putting down) a multitude of side projects. Check out my most recent projects in my Portfolio tab. 
-
-  </div>
-</div>
-<br>
-<br>
-
-## Background
-<div class = "container">
-  <div class = "pull-left">
 ### Education
-**MPH in Epidemiology & Biostatistics**  
-U.C. Berkeley School of Public Health, 2020  
-  
-**BA in Environmental Studies**  
-Yale University, 2015
-  </div>
-  <div class = "pull-right">
-### Recent Roles  
-**Analyst**  
-Kaiser Permanente Division of Research  
-  
-**Consumer Insights**  
-Curology  
+**MPH Epidemiology & Biostatistics** | U.C. Berkeley School of Public Health, 2020  
+**BA Environmental Studies**  | Yale University, 2015
 
-**Senior Operations Associate,**  
-**Operations Associate**       
-Collective Health  
-  </div>
-</div>
+### Recent Roles  
+**Analyst** | Kaiser Permanente Division of Research | Present  
+**Consumer Insights** | Curology | 2019  
+**Senior Operations Associate** | Collective Health | 2018  
+**Operations Associate** | Collective Health | 2016
 

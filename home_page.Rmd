@@ -10,6 +10,7 @@ links:
     url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
   - label: Email
     url: "mailto:ijeamaka.anyene@gmail.com"
+site: distill::distill_website
 output:
   postcards::trestles
 ---

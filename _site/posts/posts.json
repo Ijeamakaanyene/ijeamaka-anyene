@@ -81,7 +81,7 @@
     "contents": "\nTidyTuesday\nTidyTuesday is a weekly social data project in R - hosted by the R4DS Online Learning Community. The intent of Tidy Tuesday is to provide a safe community to practice your wrangling and data visualization skills. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.\nAll of my contributions + code can be found here.\nSome Personal (& Recent) Favorites\nPlastic Pollution - Data Source: Break Free From Plastic\n\n\n\nTate Art Museum Acquisitions - Data Source: Tate Art Musuem\n\n\nToronto Shelters - Data Source: {opendatatoronto}\n\n\n\nWashington Trails - Data Source: WTA\n\n\nExtinct Plants - Data Source: IUCN Red List\n\n\n\nAvatar: The Last Airbender - Data Source: {appa}\n\n\n\n\n\n\n",
     "preview": "https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2021_03_plastic_pollution.png",
     "last_modified": "2021-01-27T21:19:42-08:00",
-    "input_file": "tidytuesday.utf8.md"
+    "input_file": {}
   },
   {
     "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",
