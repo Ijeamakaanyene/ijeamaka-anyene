@@ -16,7 +16,12 @@ output:
 ---
 ### Hey There!
 Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects in my Portfolio tab.
-
+  
+  
+**Let's collaborate!**  
+Do you want to use one of my computational art pieces? Or do you need a new  visualization? Interested in having me talk at your organization or group? Do you have an idea that doesn't fit the previous questions? Email me!
+  
+  
 ### Education
 **MPH Epidemiology & Biostatistics** | U.C. Berkeley School of Public Health, 2020  
 **BA Environmental Studies**  | Yale University, 2015
