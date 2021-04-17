@@ -16,8 +16,8 @@
     ],
     "contents": "\naRt + ggplot: exploring radial visualizations\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: R-Ladies Johannesburg & Tunis Joint MeetupDate: January 14th, 2021\nEvent: R-Ladies Santa Barbara Date: April 14th, 2021YouTube RecordingGithub Source Code\n\n\n\n",
     "preview": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png",
-    "last_modified": "2021-04-17T00:55:40-07:00",
-    "input_file": "art-ggplot-exploring-radial-visualizations.utf8.md",
+    "last_modified": "2021-04-17T00:55:41-07:00",
+    "input_file": {},
     "preview_width": 2799,
     "preview_height": 1576
   },
