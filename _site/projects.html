@@ -84,26 +84,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ijeamaka Anyene: Talks</title>
+  <title>Ijeamaka Anyene: Projects</title>
   
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ijeamaka Anyene: Talks"/>
+  <meta property="og:title" content="Ijeamaka Anyene: Projects"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Ijeamaka Anyene"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ijeamaka Anyene: Talks"/>
+  <meta property="twitter:title" content="Ijeamaka Anyene: Projects"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Talks"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["2021-01-14-art-ggplot-exploring-radial-visualizations","2021-01-04-radial-patterns-in-ggplot2","2020-12-08-tidytuesday","2020-10-22-workshop-an-introduction-to-ggplot2"]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Projects"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css"]}},"value":[{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2393,15 +2393,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="theme.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Talks","authors":[]}
+{"title":"Projects","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2415,7 +2416,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="nav-right">
 <a href="index.html">Home</a>
 <a href="projects.html">Projects</a>
-<a href="portfolio.html">Talks</a>
+<a href="talks.html">Talks</a>
 <a href="https://twitter.com/ijeamaka_a">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2432,225 +2433,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Talks">Talks</h1>
-<a href="posts/2021-01-14-art-ggplot-exploring-radial-visualizations/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["portfolio","computational art","presentation"]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 14, 2021</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png"/>
-</div>
-<div class="description">
-<h2>aRt + ggplot: exploring radial visualizations</h2>
-<div class="dt-tags">
-<div class="dt-tag">portfolio</div>
-<div class="dt-tag">computational art</div>
-<div class="dt-tag">presentation</div>
-</div>
-<p>Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis.</p>
-</div>
-</a>
-<a href="posts/2021-01-04-radial-patterns-in-ggplot2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["portfolio","computational art"]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 4, 2021</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-01-04-radial-patterns-in-ggplot2/patterns_cover_3.png"/>
-</div>
-<div class="description">
-<h2>Radial Patterns in ggplot2</h2>
-<div class="dt-tags">
-<div class="dt-tag">portfolio</div>
-<div class="dt-tag">computational art</div>
-</div>
-<p>A love letter to coord_polar() masquerading as a #rstats zine</p>
-</div>
-</a>
-<a href="posts/2020-10-22-workshop-an-introduction-to-ggplot2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["presentation","portfolio"]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 22, 2020</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2020-10-22-workshop-an-introduction-to-ggplot2/ggplot_presentation_slide_image.png"/>
-</div>
-<div class="description">
-<h2>An Introduction to ggplot2</h2>
-<div class="dt-tags">
-<div class="dt-tag">presentation</div>
-<div class="dt-tag">portfolio</div>
-</div>
-<p>A workshop created for Kaiser Permanente's Division of Research Data Visualization Week.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:computational_art">computational art</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:portfolio">portfolio</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:presentation">presentation</a>
-<span class="category-count">(2)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Talks</h1>
+<h1>Projects</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2658,6 +2443,57 @@ function init_posts_list() {
 
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<div class="card" style="display: flex;">
+<img class="card-img-top" src="images/logo.png" style="width:300px;"/>
+<div class="card-body">
+<h4>
+<a href="https://ijeamaka-a.shinyapps.io/rtistry_gallery/">rtistry art gallery</a>
+</h4>
+<p class="card-text">
+A celebration and showcase of art in all of its forms created by the #rstats community.
+<br/>
+Entry for the RStudio 2021 Shiny Competition.
+</p>
+</div>
+</div>
+<div class="card" style="display: flex;">
+<img class="card-img-top" src="images/20210322212954.png" style="width:300px;"/>
+<div class="card-body">
+<h4>
+<a href="https://github.com/Ijeamakaanyene/contouR">{contouR}</a>
+</h4>
+<p class="card-text">
+An R package for creating patterns using geom_contour().
+<br/>
+</p>
+</div>
+</div>
+<div class="card" style="display: flex;">
+<img class="card-img-top" src="images/2021_04_hbcus.png" style="width:300px;"/>
+<div class="card-body">
+<h4>
+<a href="https://github.com/Ijeamakaanyene/tidytuesday">TidyTuesday</a>
+</h4>
+<p class="card-text">
+A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.
+<br/>
+</p>
+</div>
+</div>
+<div class="card" style="display: flex;">
+<img class="card-img-top" src="https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png" style="width:300px;"/>
+<div class="card-body">
+<h4>
+<a href="https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/">COVID-19 Visualization</a>
+</h4>
+<p class="card-text">
+An infectious disease natural history primer for U.C. Berkeley School of Public Health
+<br/>
+</p>
+</div>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

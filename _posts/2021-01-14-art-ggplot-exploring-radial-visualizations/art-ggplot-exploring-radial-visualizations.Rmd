@@ -1,7 +1,7 @@
 ---
 title: "aRt + ggplot: exploring radial visualizations"
 description: |
-  Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis.
+  Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021).
 author:
   - name: Ijeamaka Anyene
     url: https://twitter.com/ijeamaka_a
@@ -15,7 +15,6 @@ output:
   distill::distill_article:
     self_contained: false
 categories:
-  - portfolio
   - computational art
   - presentation
 ---
@@ -57,6 +56,9 @@ xaringanExtra::embed_xaringan(url = "https://ijeamakaanyene.github.io/aRt_ggplot
 
 **Event:** R-Ladies Johannesburg & Tunis Joint Meetup  
 **Date:** January 14th, 2021  
+
+**Event:** R-Ladies Santa Barbara
+**Date:** April 14th, 2021  
 [YouTube Recording](https://www.youtube.com/watch?v=h0i6KAahLY8)  
 [Github Source Code](https://github.com/Ijeamakaanyene/aRt_ggplot)  
 

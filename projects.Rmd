@@ -1,0 +1,53 @@
+---
+title: "Projects"
+description: |
+output: 
+  distill::distill_article:
+    css: theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, include=FALSE}
+library(htmltools)
+source("R/functions.R")
+```
+
+
+```{r}
+create_proj_card(
+  img_src = "images/logo.png",
+  url = "https://ijeamaka-a.shinyapps.io/rtistry_gallery/",
+  title = "rtistry art gallery",
+  text = "A celebration and showcase of art in all of its forms created by the #rstats community.",
+  text2 = "Entry for the RStudio 2021 Shiny Competition."
+)
+
+create_proj_card(
+  img_src = "images/20210322212954.png",
+  url = "https://github.com/Ijeamakaanyene/contouR",
+  title = "{contouR}",
+  text = "An R package for creating patterns using geom_contour().",
+  text2 = NULL
+)
+
+create_proj_card(
+  img_src = "images/2021_04_hbcus.png",
+  url = "https://github.com/Ijeamakaanyene/tidytuesday",
+  title = "TidyTuesday",
+  text = "A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.",
+  text2 = NULL
+)
+
+create_proj_card(
+  img_src = "https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png",
+  url = "https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/",
+  title = "COVID-19 Visualization",
+  text = "An infectious disease natural history primer for U.C. Berkeley School of Public Health",
+  text2 = NULL
+)
+
+```
+
