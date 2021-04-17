@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/blog_posts.html</loc>
-    <lastmod>2020-11-29T15:32:26-08:00</lastmod>
-  </url>
-  <url>
     <loc>https://ijeamaka-anyene.netlify.app/</loc>
-    <lastmod>2021-03-11T19:10:28-08:00</lastmod>
+    <lastmod>2021-04-17T00:53:31-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/portfolio.html</loc>
-    <lastmod>2021-01-16T19:32:34-08:00</lastmod>
+    <lastmod>2021-04-17T00:47:49-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ijeamaka-anyene.netlify.app/projects.html</loc>
+    <lastmod>2021-04-17T00:46:26-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/</loc>
-    <lastmod>2021-01-16T19:36:24-08:00</lastmod>
+    <lastmod>2021-04-17T00:55:40-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/</loc>
     <lastmod>2021-01-03T15:56:19-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2020-12-08-tidytuesday/</loc>
-    <lastmod>2021-01-27T21:19:42-08:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2/</loc>

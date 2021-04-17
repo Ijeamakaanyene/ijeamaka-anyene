@@ -7,7 +7,24 @@
     <description>Ijeamaka Anyene's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>computational art</title>
+      <dc:creator/>
+      <link>https://ijeamaka-anyene.netlify.app/posts/2021-03-18-computational-art</link>
+      <description>A short description of the post.</description>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/2021-03-18-computational-art</guid>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Did I accidentally make a rug again?</title>
+      <dc:creator>Ijeamaka Anyene</dc:creator>
+      <link>https://ijeamaka-anyene.netlify.app/posts/2021-01-26-computational-art-rugs</link>
+      <description>Often while attempting to make computational art pieces, I look up and think, wow this looks a lot like a rug. This effectively is a gallery for my favorite rugs pieces.</description>
+      <guid>https://ijeamaka-anyene.netlify.app/posts/2021-01-26-computational-art-rugs</guid>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://ijeamaka-anyene.netlify.app/posts/2021-01-26-computational-art-rugs/computational-art-rugs_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>aRt + ggplot: exploring radial visualizations</title>
       <dc:creator>Ijeamaka Anyene</dc:creator>
@@ -40,7 +57,7 @@
       <category>portfolio</category>
       <guid>https://ijeamaka-anyene.netlify.app/posts/2020-12-08-tidytuesday</guid>
       <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2020-19_toronto_shelters.png" medium="image" type="image/png"/>
+      <media:content url="https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2021_03_plastic_pollution.png" medium="image" type="image/png"/>
     </item>
     <item>
       <title>An Introduction to ggplot2</title>

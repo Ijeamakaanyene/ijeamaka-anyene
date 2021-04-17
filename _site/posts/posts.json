@@ -2,7 +2,7 @@
   {
     "path": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/",
     "title": "aRt + ggplot: exploring radial visualizations",
-    "description": "Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis.",
+    "description": "Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021).",
     "author": [
       {
         "name": "Ijeamaka Anyene",
@@ -11,14 +11,13 @@
     ],
     "date": "2021-01-14",
     "categories": [
-      "portfolio",
       "computational art",
       "presentation"
     ],
-    "contents": "\naRt + ggplot: exploring radial visualizations\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: R-Ladies Johannesburg & Tunis Joint MeetupDate: January 14th, 2021YouTube RecordingGithub Source Code\n\n\n\n",
+    "contents": "\naRt + ggplot: exploring radial visualizations\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: R-Ladies Johannesburg & Tunis Joint MeetupDate: January 14th, 2021\nEvent: R-Ladies Santa Barbara Date: April 14th, 2021YouTube RecordingGithub Source Code\n\n\n\n",
     "preview": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png",
-    "last_modified": "2021-01-16T19:36:24-08:00",
-    "input_file": {},
+    "last_modified": "2021-04-17T00:55:40-07:00",
+    "input_file": "art-ggplot-exploring-radial-visualizations.utf8.md",
     "preview_width": 2799,
     "preview_height": 1576
   },
@@ -43,26 +42,6 @@
     "input_file": {},
     "preview_width": 5100,
     "preview_height": 2700
-  },
-  {
-    "path": "posts/2020-12-08-tidytuesday/",
-    "title": "TidyTuesday",
-    "description": "A #R4DS Weekly Challenge",
-    "author": [
-      {
-        "name": "Ijeamaka Anyene",
-        "url": "https://twitter.com/ijeamaka_a"
-      }
-    ],
-    "date": "2020-12-08",
-    "categories": [
-      "data visualization",
-      "portfolio"
-    ],
-    "contents": "\nTidyTuesday\nTidyTuesday is a weekly social data project in R - hosted by the R4DS Online Learning Community. The intent of Tidy Tuesday is to provide a safe community to practice your wrangling and data visualization skills. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.\nAll of my contributions + code can be found here.\nSome Personal (& Recent) Favorites\nPlastic Pollution - Data Source: Break Free From Plastic\n\n\n\nTate Art Museum Acquisitions - Data Source: Tate Art Musuem\n\n\nToronto Shelters - Data Source: {opendatatoronto}\n\n\n\nWashington Trails - Data Source: WTA\n\n\nExtinct Plants - Data Source: IUCN Red List\n\n\n\nAvatar: The Last Airbender - Data Source: {appa}\n\n\n\n\n\n\n",
-    "preview": "https://raw.githubusercontent.com/Ijeamakaanyene/tidytuesday/master/outputs/2021_03_plastic_pollution.png",
-    "last_modified": "2021-01-27T21:19:42-08:00",
-    "input_file": {}
   },
   {
     "path": "posts/2020-10-22-workshop-an-introduction-to-ggplot2/",

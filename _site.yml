@@ -9,7 +9,9 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Portfolio"
+    - text: "Projects"
+      href: projects.html
+    - text: "Talks"
       href: portfolio.html
     - icon: fab fa-twitter
       href: https://twitter.com/ijeamaka_a
