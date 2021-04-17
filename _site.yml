@@ -11,7 +11,7 @@ navbar:
       href: index.html
     - text: "Projects"
       href: projects.html
-    - text: "Talks"
+    - text: "Talks + Zine"
       href: talks.html
     - icon: fab fa-twitter
       href: https://twitter.com/ijeamaka_a

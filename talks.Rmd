@@ -1,5 +1,5 @@
 ---
-title: "Talks"
+title: "Talks + Zine"
 listing:
   posts:
     - 2021-01-14-art-ggplot-exploring-radial-visualizations

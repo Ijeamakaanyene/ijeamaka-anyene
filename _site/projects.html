@@ -2201,6 +2201,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       border-radius: 10px; 
       margin: 16px 16px;
       text-decoration: none;
+      display: flex;
   }
   
   .card-body {
@@ -2219,6 +2220,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: white;
     text-align: right;
     padding-right: 5px;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    .card {
+      color: #474747;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px; 
+      margin: 16px 16px;
+      text-decoration: none;
+      display: block;
+      width: 300px;
+    }
+    
   }</style>
   <style type="text/css">
   /* base style */
@@ -2416,7 +2433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="nav-right">
 <a href="index.html">Home</a>
 <a href="projects.html">Projects</a>
-<a href="talks.html">Talks</a>
+<a href="talks.html">Talks + Zine</a>
 <a href="https://twitter.com/ijeamaka_a">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2444,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <div class="layout-chunk" data-layout="l-body">
-<div class="card" style="display: flex;">
+<div class="card">
 <img class="card-img-top" src="images/logo.png" style="width:300px;"/>
 <div class="card-body">
 <h4>
@@ -2457,7 +2474,7 @@ Entry for the RStudio 2021 Shiny Competition.
 </p>
 </div>
 </div>
-<div class="card" style="display: flex;">
+<div class="card">
 <img class="card-img-top" src="images/20210322212954.png" style="width:300px;"/>
 <div class="card-body">
 <h4>
@@ -2469,7 +2486,7 @@ An R package for creating patterns using geom_contour().
 </p>
 </div>
 </div>
-<div class="card" style="display: flex;">
+<div class="card">
 <img class="card-img-top" src="images/2021_04_hbcus.png" style="width:300px;"/>
 <div class="card-body">
 <h4>
@@ -2481,7 +2498,7 @@ A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization
 </p>
 </div>
 </div>
-<div class="card" style="display: flex;">
+<div class="card">
 <img class="card-img-top" src="https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png" style="width:300px;"/>
 <div class="card-body">
 <h4>
