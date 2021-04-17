@@ -52,41 +52,41 @@ div.sourceCode
 @media screen {
 a.sourceLine::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #545454; font-weight: bold; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #a1024a; } /* BaseN */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #008000; } /* Char */
-code span.cn { color: #d91e18; } /* Constant */
-code span.co { color: #545454; } /* Comment */
-code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #aa5d00; } /* DataType */
-code span.dv { color: #a1024a; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #a1024a; } /* Float */
-code span.fu { color: #4254a7; } /* Function */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #545454; font-weight: bold; } /* Information */
-code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
-code span.op { color: #696969; } /* Operator */
-code span.ot { color: #007faa; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #008000; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #008000; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #008000; } /* VerbatimString */
-code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
 <title>Ijeamaka Anyene: aRt + ggplot: exploring radial visualizations</title>
 
-<meta property="description" itemprop="description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis."/>
+<meta property="description" itemprop="description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021)."/>
 
 <link rel="canonical" href="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"/>
 
@@ -98,7 +98,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Ijeamaka Anyene: aRt + ggplot: exploring radial visualizations"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis."/>
+<meta property="og:description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021)."/>
 <meta property="og:url" content="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"/>
 <meta property="og:image" content="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png"/>
 <meta property="og:image:width" content="2799"/>
@@ -109,7 +109,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Ijeamaka Anyene: aRt + ggplot: exploring radial visualizations"/>
-<meta property="twitter:description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis."/>
+<meta property="twitter:description" content="Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021)."/>
 <meta property="twitter:url" content="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"/>
 <meta property="twitter:image" content="https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png"/>
 <meta property="twitter:image:width" content="2799"/>
@@ -127,7 +127,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","base_url","date","preview","twitter","output","categories","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["aRt + ggplot: exploring radial visualizations"]},{"type":"character","attributes":{},"value":["Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ijeamaka Anyene"]},{"type":"character","attributes":{},"value":["https://twitter.com/ijeamaka_a"]}]}]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app"]},{"type":"character","attributes":{},"value":["01-14-2021"]},{"type":"character","attributes":{},"value":["cover_image.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","creator"]}},"value":[{"type":"character","attributes":{},"value":["@ijeamaka_a"]},{"type":"character","attributes":{},"value":["@ijeamaka_a"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["portfolio","computational art","presentation"]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","base_url","date","preview","twitter","output","categories","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["aRt + ggplot: exploring radial visualizations"]},{"type":"character","attributes":{},"value":["Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021)."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ijeamaka Anyene"]},{"type":"character","attributes":{},"value":["https://twitter.com/ijeamaka_a"]}]}]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app"]},{"type":"character","attributes":{},"value":["01-14-2021"]},{"type":"character","attributes":{},"value":["cover_image.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","creator"]}},"value":[{"type":"character","attributes":{},"value":["@ijeamaka_a"]},{"type":"character","attributes":{},"value":["@ijeamaka_a"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["computational art","presentation"]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"]},{"type":"character","attributes":{},"value":["https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2219,6 +2219,34 @@ d-appendix {
 .pull-right {
   float: right;
   width: 47%;
+}
+
+.card {
+    color: #474747;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; 
+    margin: 16px 16px;
+    text-decoration: none;
+}
+
+.card-body {
+  padding: 2px 16px;
+}
+
+.card-img {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+}
+
+.card-footer {
+  background-color: #000;
+  color: white;
+  text-align: right;
+  padding-right: 5px;
 }</style>
 <style type="text/css">
 /* base style */
@@ -2399,6 +2427,10 @@ d-appendix d-footnote-list a.footnote-backlink {
   <script src="../../site_libs/xaringanExtra-shareagain-0.2.4/shareagain.js"></script>
   <script src="../../site_libs/fitvids-2.1.1/fitvids.min.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
@@ -2421,7 +2453,7 @@ gtag('config', 'G-YNW2MDRE2W');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"aRt + ggplot: exploring radial visualizations","description":"Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis.","authors":[{"author":"Ijeamaka Anyene","authorURL":"https://twitter.com/ijeamaka_a","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-14T00:00:00.000+00:00","citationText":"Anyene, 2021"}
+{"title":"aRt + ggplot: exploring radial visualizations","description":"Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021).","authors":[{"author":"Ijeamaka Anyene","authorURL":"https://twitter.com/ijeamaka_a","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-14T00:00:00.000+00:00","citationText":"Anyene, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2434,7 +2466,8 @@ gtag('config', 'G-YNW2MDRE2W');
 </div>
 <div class="nav-right">
 <a href="../../index.html">Home</a>
-<a href="../../portfolio.html">Portfolio</a>
+<a href="../../projects.html">Projects</a>
+<a href="../../portfolio.html">Talks</a>
 <a href="https://twitter.com/ijeamaka_a">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2455,13 +2488,8 @@ gtag('config', 'G-YNW2MDRE2W');
 <div class="d-title">
 <h1>aRt + ggplot: exploring radial visualizations</h1>
 <!--radix_placeholder_categories-->
-<div class="dt-tags">
-  <a href="../../blog_posts.html#category:portfolio" class="dt-tag">portfolio</a>
-  <a href="../../blog_posts.html#category:computational_art" class="dt-tag">computational art</a>
-  <a href="../../blog_posts.html#category:presentation" class="dt-tag">presentation</a>
-</div>
 <!--/radix_placeholder_categories-->
-<p>Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis.</p>
+<p>Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg &amp; Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021).</p>
 </div>
 
 <div class="d-byline">
@@ -2473,7 +2501,7 @@ gtag('config', 'G-YNW2MDRE2W');
 <div class="d-article">
 <h2 id="art-ggplot-exploring-radial-visualizations">aRt + ggplot: exploring radial visualizations</h2>
 <div class="layout-chunk" data-layout="l-body">
-<p><style>.shareagain-bar {
+<style>.shareagain-bar {
 --shareagain-foreground: rgb(255, 255, 255);
 --shareagain-background: rgba(0, 0, 0, 0.5);
 --shareagain-facebook: none;
@@ -2481,13 +2509,15 @@ gtag('config', 'G-YNW2MDRE2W');
 --shareagain-pinterest: none;
 --shareagain-pocket: none;
 --shareagain-reddit: none;
-}</style><div class="shareagain" style="min-width:300px;margin:1em auto;">
+}</style>
+<div class="shareagain" style="min-width:300px;margin:1em auto;">
 <iframe src="https://ijeamakaanyene.github.io/aRt_ggplot/index.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
-</div></p>
+</div>
 </div>
 <p><strong>Event:</strong> R-Ladies Johannesburg &amp; Tunis Joint Meetup<br />
-<strong>Date:</strong> January 14th, 2021<br />
+<strong>Date:</strong> January 14th, 2021</p>
+<p><strong>Event:</strong> R-Ladies Santa Barbara <strong>Date:</strong> April 14th, 2021<br />
 <a href="https://www.youtube.com/watch?v=h0i6KAahLY8">YouTube Recording</a><br />
 <a href="https://github.com/Ijeamakaanyene/aRt_ggplot">Github Source Code</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
