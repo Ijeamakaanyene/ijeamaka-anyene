@@ -8,15 +8,13 @@ links:
     url: "https://github.com/Ijeamakaanyene"
   - label: LinkedIn
     url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
+  - label: Shop
+    url: "https://www.etsy.com/shop/ArtSnacksPrints"
   - label: Email
     url: "mailto:ijeamaka.anyene@gmail.com"
 site: distill::distill_website
 output:
-  postcards::trestles
+  postcards::jolla
 ---
-### Hey There!
-Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.
-  
-  
-**Let's collaborate!**  
-Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn't fit the previous questions? Email me!
+
+Hey there! I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 
