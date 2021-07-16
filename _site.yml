@@ -1,5 +1,5 @@
 name: "distill-site"
-title: "Home"
+title: "ijeamaka anyene"
 description: |
   Ijeamaka Anyene's personal website
 base_url: https://ijeamaka-anyene.netlify.app/
@@ -8,9 +8,9 @@ google_analytics: "G-YNW2MDRE2W"
 navbar:
   search: false
   right:
-    - text: "Portfolio"
+    - text: "portfolio"
       href: projects.html
-    - text: "Talks + Features"
+    - text: "talks + features"
       href: talks_features.html
 collections:
   posts:

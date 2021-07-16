@@ -1,5 +1,5 @@
 ---
-title: "Ijeamaka Anyene"
+title: ""
 image: "personal_picture_v2.png"
 links:
   - label: Twitter
@@ -17,4 +17,4 @@ output:
   postcards::jolla
 ---
 
-Hey there! I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 
+Hey there, I'm Ijeamaka. I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 

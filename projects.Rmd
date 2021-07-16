@@ -1,7 +1,7 @@
 ---
-title: "Portfolio"
+title: "portfolio"
 description: |
-  An amalgation of my work, including but not limited to shiny apps, software, and data visualization projects. 
+  An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects. 
 output: 
   distill::distill_article:
     css: theme.css
@@ -16,56 +16,70 @@ library(htmltools)
 source("R/functions.R")
 ```
 
-
+# Computational and generative art
 ```{r}
 create_proj_card(
   img_src = "images/ZINE_COVER.png",
   url = "https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/",
   title = "Radial Patterns in ggplot2",
-  text = "A love letter to coord_polar() masquerading as a #rstats zine",
-  text2 = "Category: Computational + generative art"
+  text = "A love letter to coord_polar() masquerading as a #rstats zine, 2021",
+  text2 = ""
 )
 
 create_proj_card(
   img_src = "images/cloudscape_app.jpeg",
   url = "https://ijeamaka-a.shinyapps.io/cloudtopia_shinyapp/",
   title = "Cloudscape",
-  text = "a shiny app of a short looping video of a cloudscape",
-  text2 = "Category: R Shiny"
+  text = "a shiny app of a short looping video of a cloudscape, 2021",
+  text2 = ""
 )
+```
+<br><br>
 
-
+# Data visualizations
+```{r}
 create_proj_card(
-  img_src = "images/logo.png",
-  url = "https://ijeamaka-a.shinyapps.io/rtistry_gallery/",
-  title = "rtistry art gallery",
-  text = "A celebration and showcase of art in all of its forms created by the #rstats community. An entry for the RStudio 2021 Shiny Competition.",
-   text2 = "Category: R Shiny"
-)
-
-create_proj_card(
-  img_src = "images/20210322212954.png",
-  url = "https://github.com/Ijeamakaanyene/contouR",
-  title = "{contouR}",
-  text = "An R package for creating patterns using geom_contour().",
-  text2 = "Category: R Package Development"
+  img_src = "images/here_say_media.png",
+  url = "https://heresaymedia.org/chinatown-vaccine-rollout-lagging-rest-of-san-francisco/",
+  title = "Vaccine Rollout in San Francisco Neighborhoods",
+  text = "Data visualization and analysis for Here Say Media, 2021",
+  text2 = ""
 )
 
 create_proj_card(
   img_src = "images/2021_04_hbcus.png",
   url = "https://github.com/Ijeamakaanyene/tidytuesday",
   title = "TidyTuesday",
-  text = "A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using {ggplot2} and other extension packages.",
-  text2 = "Category: Data Visualization"
+  text = "A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using {ggplot2} and other extension packages, 2020",
+  text2 = ""
 )
 
 create_proj_card(
   img_src = "https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png",
   url = "https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/",
   title = "COVID-19 Visualization",
-  text = "An infectious disease natural history primer for U.C. Berkeley School of Public Health",
-  text2 = "Category: Data Visualization"
+  text = "An infectious disease natural history primer for U.C. Berkeley School of Public Health, 2020",
+  text2 = ""
+)
+```
+<br><br>
+
+# Shiny apps and package development
+```{r}
+create_proj_card(
+  img_src = "images/logo.png",
+  url = "https://ijeamaka-a.shinyapps.io/rtistry_gallery/",
+  title = "rtistry art gallery",
+  text = "A celebration and showcase of art in all of its forms created by the #rstats community. An entry for the RStudio 2021 Shiny Competition, 2021",
+   text2 = ""
 )
 
+create_proj_card(
+  img_src = "images/20210322212954.png",
+  url = "https://github.com/Ijeamakaanyene/contouR",
+  title = "{contouR}",
+  text = "An R package for creating patterns using geom_contour(), 2021",
+  text2 = ""
+)
 ```
 

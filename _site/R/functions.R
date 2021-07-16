@@ -9,8 +9,7 @@ create_proj_card = function(img_src, url, title, text, text2){
       h4(
         a(href = url,  
           title)),
-      p(class = "card-text", 
-        text, br(), text2)
+      p(text, br(), text2)
     )
   )
   
