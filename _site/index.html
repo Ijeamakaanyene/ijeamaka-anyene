@@ -8,10 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style type="text/css">body {font-family: 'Roboto Slab', serif;}</style>
-
-    <title>Ijeamaka Anyene</title>
+    <title></title>
 
     
           <!--radix_placeholder_navigation_in_header-->
@@ -362,265 +359,6 @@
       <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
       <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
       <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-      <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-      <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-      
-      <script type="application/javascript">
-      
-      function getMeta(metaName) {
-        var metas = document.getElementsByTagName('meta');
-        for (let i = 0; i < metas.length; i++) {
-          if (metas[i].getAttribute('name') === metaName) {
-            return metas[i].getAttribute('content');
-          }
-        }
-        return '';
-      }
-      
-      function offsetURL(url) {
-        var offset = getMeta('distill:offset');
-        return offset ? offset + '/' + url : url;
-      }
-      
-      function createFuseIndex() {
-      
-        // create fuse index
-        var options = {
-          keys: [
-            { name: 'title', weight: 20 },
-            { name: 'categories', weight: 15 },
-            { name: 'description', weight: 10 },
-            { name: 'contents', weight: 5 },
-          ],
-          ignoreLocation: true,
-          threshold: 0
-        };
-        var fuse = new window.Fuse([], options);
-      
-        // fetch the main search.json
-        return fetch(offsetURL('search.json'))
-          .then(function(response) {
-            if (response.status == 200) {
-              return response.json().then(function(json) {
-                // index main articles
-                json.articles.forEach(function(article) {
-                  fuse.add(article);
-                });
-                // download collections and index their articles
-                return Promise.all(json.collections.map(function(collection) {
-                  return fetch(offsetURL(collection)).then(function(response) {
-                    if (response.status === 200) {
-                      return response.json().then(function(articles) {
-                        articles.forEach(function(article) {
-                          fuse.add(article);
-                        });
-                      })
-                    } else {
-                      return Promise.reject(
-                        new Error('Unexpected status from search index request: ' +
-                                  response.status)
-                      );
-                    }
-                  });
-                })).then(function() {
-                  return fuse;
-                });
-              });
-      
-            } else {
-              return Promise.reject(
-                new Error('Unexpected status from search index request: ' +
-                            response.status)
-              );
-            }
-          });
-      }
-      
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-      
-        // get search element (bail if we don't have one)
-        var searchEl = window.document.getElementById('distill-search');
-        if (!searchEl)
-          return;
-      
-        createFuseIndex()
-          .then(function(fuse) {
-      
-            // make search box visible
-            searchEl.classList.remove('hidden');
-      
-            // initialize autocomplete
-            var options = {
-              autoselect: true,
-              hint: false,
-              minLength: 2,
-            };
-            window.autocomplete(searchEl, options, [{
-              source: function(query, callback) {
-                const searchOptions = {
-                  isCaseSensitive: false,
-                  shouldSort: true,
-                  minMatchCharLength: 2,
-                  limit: 10,
-                };
-                var results = fuse.search(query, searchOptions);
-                callback(results
-                  .map(function(result) { return result.item; })
-                );
-              },
-              templates: {
-                suggestion: function(suggestion) {
-                  var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                    ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                    : '';
-                  var html = `
-                    <div class="search-item">
-                      <h3>${suggestion.title}</h3>
-                      <div class="search-item-description">
-                        ${suggestion.description || ''}
-                      </div>
-                      <div class="search-item-preview">
-                        ${img}
-                      </div>
-                    </div>
-                  `;
-                  return html;
-                }
-              }
-            }]).on('autocomplete:selected', function(event, suggestion) {
-              window.location.href = offsetURL(suggestion.path);
-            });
-            // remove inline display style on autocompleter (we want to
-            // manage responsive display via css)
-            $('.algolia-autocomplete').css("display", "");
-          })
-          .catch(function(error) {
-            console.log(error);
-          });
-      
-      });
-      
-      </script>
-      
-      <style type="text/css">
-      
-      .nav-search {
-        font-size: x-small;
-      }
-      
-      /* Algolioa Autocomplete */
-      
-      .algolia-autocomplete {
-        display: inline-block;
-        margin-left: 10px;
-        vertical-align: sub;
-        background-color: white;
-        color: black;
-        padding: 6px;
-        padding-top: 8px;
-        padding-bottom: 0;
-        border-radius: 6px;
-        border: 1px #0F2E3D solid;
-        width: 180px;
-      }
-      
-      
-      @media screen and (max-width: 768px) {
-        .distill-site-nav .algolia-autocomplete {
-          display: none;
-          visibility: hidden;
-        }
-        .distill-site-nav.responsive .algolia-autocomplete {
-          display: inline-block;
-          visibility: visible;
-        }
-        .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-          margin-left: 0;
-          width: 400px;
-          max-height: 400px;
-        }
-      }
-      
-      .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-        width: 90%;
-        outline: none;
-        border: none;
-      }
-      
-      .algolia-autocomplete .aa-hint {
-        color: #999;
-      }
-      .algolia-autocomplete .aa-dropdown-menu {
-        width: 550px;
-        max-height: 70vh;
-        overflow-x: visible;
-        overflow-y: scroll;
-        padding: 5px;
-        margin-top: 3px;
-        margin-left: -150px;
-        background-color: #fff;
-        border-radius: 5px;
-        border: 1px solid #999;
-        border-top: none;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-        cursor: pointer;
-        padding: 5px 4px;
-        border-bottom: 1px solid #eee;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-        border-bottom: none;
-        margin-bottom: 2px;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-        overflow: hidden;
-        font-size: 0.8em;
-        line-height: 1.4em;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-        font-size: 1rem;
-        margin-block-start: 0;
-        margin-block-end: 5px;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-        display: inline-block;
-        overflow: hidden;
-        height: 2.8em;
-        width: 80%;
-        margin-right: 4%;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-        display: inline-block;
-        width: 15%;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-        height: 3em;
-        width: auto;
-        display: none;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-        display: initial;
-      }
-      
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-        background-color: #eee;
-      }
-      .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-        font-weight: bold;
-        font-style: normal;
-      }
-      
-      </style>
-      
-      
       <!--/radix_placeholder_navigation_in_header-->
           <!--radix_placeholder_site_in_header-->
       <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-YNW2MDRE2W"></script>
@@ -846,7 +584,21 @@
           width: 300px;
         }
         
-      }</style>
+      }
+      
+      .icon-link {
+          background-color: #FFFFFF;
+          color: #000000;
+          padding: 3px 5px 3px 5px;
+          margin: 0 2px 0 2px;
+          border-radius: 0px; /* Rounded edges */
+      }
+      
+      .icon-link:hover {
+          background-color: #89ac81;
+          color: #FFFFFF;
+      }
+      </style>
       <style type="text/css">
       /* base style */
       
@@ -1010,22 +762,11 @@
       <header class="header header--fixed" role="banner">
       <nav class="distill-site-nav distill-site-header">
       <div class="nav-left">
-      <a href="index.html" class="title">Ijeamaka Anyene</a>
-      <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+      <a href="index.html" class="title">ijeamaka anyene</a>
       </div>
       <div class="nav-right">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="talks.html">Talks + Zine</a>
-      <a href="https://twitter.com/ijeamaka_a">
-      <i class="fab fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/Ijeamakaanyene">
-      <i class="fab fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/">
-      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-      </a>
+      <a href="projects.html">portfolio</a>
+      <a href="talks_features.html">talks + features</a>
       <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
       </div>
       </nav>
@@ -1034,113 +775,97 @@
           <!--radix_placeholder_site_before_body-->
       <!--/radix_placeholder_site_before_body-->
     
-    <div class="container-fluid d-none d-lg-block d-xl-block">
-      <div class="d-flex row flex-row vh-100">
-        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
-          <div class="mx-auto text-center">
-            <div class="p-3">
-              <img src=personal_picture_v2.png style="height:15rem" class="rounded">
+    <div class="container min-vh-100">
+      <div class="row min-vh-100 justify-content-center align-items-center">
+        <div class="col-12 text-center">
+          <img src=personal_picture_v2.png style="height:10rem" class="rounded-circle">
+          <div class="mt-3">
+            <h1></h1>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6 mt-3 text-center d-none d-sm-block">
+              <p>Hey there, I’m Ijeamaka. I’m a full-time healthcare data analyst and a free-time data visualization and computational artist.</p>
             </div>
-            <div class="p-2">
-              <h1>Ijeamaka Anyene</h1>
-            </div>
-            <hr style="width:60%;"/>
-            <div class="p-2">
-              <div id="icon-list">
-                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                    <a href=https://twitter.com/ijeamaka_a>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Twitter
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://github.com/Ijeamakaanyene>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        GitHub
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        LinkedIn
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=mailto:ijeamaka.anyene@gmail.com>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Email
-                      </button>
-                    </a>
-                  </li>
-                                  </ul>
-              </div>
+            <div class="col-11 mt-3 text-center d-block d-sm-none">
+              <p>Hey there, I’m Ijeamaka. I’m a full-time healthcare data analyst and a free-time data visualization and computational artist.</p>
             </div>
           </div>
-        </div>
-        <div class="d-flex flex-column vh-100 border-left"></div>
-        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
-          <div class="my-5" id="content">
-            <div id="hey-there" class="section level3">
-            <h3>Hey There!</h3>
-            <p>Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.</p>
-            <p><strong>Let’s collaborate!</strong><br />
-            Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
-      <div class="d-flex flex-row justify-content-center">
-        <div class="d-flex flex-col">
-          <div class="mx-auto">
-            <div class="p-3 mt-3 text-center">
-              <img src=personal_picture_v2.png style="height:15rem" class="rounded">
-            </div>
-            <div class="p-2 text-center">
-              <h1>Ijeamaka Anyene</h1>
-            </div>
-            <hr style="width:60%;"/>
+          <hr style="width:60%;"/>
 
-            <div class="row justify-content-center align-items-center">
-              <div class="col-8 p-1 text-center">
-                <div class="list-group">
-                                    <a href=https://twitter.com/ijeamaka_a>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-8 text-center d-none d-sm-block">
+              <ul class="list-inline">
+                                <li class="list-inline-item">
+                  <a href=https://twitter.com/ijeamaka_a>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       Twitter
                     </button>
                   </a>
-                                    <a href=https://github.com/Ijeamakaanyene>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=https://github.com/Ijeamakaanyene>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       GitHub
                     </button>
                   </a>
-                                    <a href=https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       LinkedIn
                     </button>
                   </a>
-                                    <a href=mailto:ijeamaka.anyene@gmail.com>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=https://www.etsy.com/shop/ArtSnacksPrints>
+                    <button type="button" class="btn btn-outline-dark mb-2">
+                      Shop
+                    </button>
+                  </a>
+                </li>
+                                <li class="list-inline-item">
+                  <a href=mailto:ijeamaka.anyene@gmail.com>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       Email
                     </button>
                   </a>
-                                  </div>
-              </div>
+                </li>
+                              </ul>
             </div>
-            <div class="p pt-4 px-5">
-              <div id="hey-there" class="section level3">
-              <h3>Hey There!</h3>
-              <p>Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.</p>
-              <p><strong>Let’s collaborate!</strong><br />
-              Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!</p>
-              </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-8 m-1 text-center d-block d-sm-none">
+              <div class="list-group">
+                                <a href=https://twitter.com/ijeamaka_a>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    Twitter
+                  </button>
+                </a>
+                                <a href=https://github.com/Ijeamakaanyene>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    GitHub
+                  </button>
+                </a>
+                                <a href=https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    LinkedIn
+                  </button>
+                </a>
+                                <a href=https://www.etsy.com/shop/ArtSnacksPrints>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    Shop
+                  </button>
+                </a>
+                                <a href=mailto:ijeamaka.anyene@gmail.com>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    Email
+                  </button>
+                </a>
+                              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1151,10 +876,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-      <!--radix_placeholder_site_after_body-->
-    <!--/radix_placeholder_site_after_body-->
-      <!--radix_placeholder_navigation_after_body-->
-    <!--/radix_placeholder_navigation_after_body-->
-  
+          <!--radix_placeholder_site_after_body-->
+      <!--/radix_placeholder_site_after_body-->
+          <!--radix_placeholder_navigation_after_body-->
+      <!--/radix_placeholder_navigation_after_body-->
+    
   </body>
 </html>
