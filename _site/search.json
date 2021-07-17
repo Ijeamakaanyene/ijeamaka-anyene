@@ -13,7 +13,7 @@
       "description": "An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects. \n",
       "author": [],
       "contents": "\nComputational and generative art\n\n\n\n\nRadial Patterns in ggplot2\n\n\nA love letter to coord_polar() masquerading as a #rstats zine, 2021\n\n\n\n\n\n\nCloudscape\n\n\na shiny app of a short looping video of a cloudscape, 2021\n\n\n\n\n\nData visualizations\n\n\n\n\nVaccine Rollout in San Francisco Neighborhoods\n\n\nData visualization and analysis for Here Say Media, 2021\n\n\n\n\n\n\nTidyTuesday\n\n\nA #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using {ggplot2} and other extension packages, 2020\n\n\n\n\n\n\nCOVID-19 Visualization\n\n\nAn infectious disease natural history primer for U.C. Berkeley School of Public Health, 2020\n\n\n\n\n\nShiny apps and package development\n\n\n\n\nrtistry art gallery\n\n\nA celebration and showcase of art in all of its forms created by the #rstats community. An entry for the RStudio 2021 Shiny Competition, 2021\n\n\n\n\n\n\n{contouR}\n\n\nAn R package for creating patterns using geom_contour(), 2021\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-07-15T17:38:35-07:00"
+      "last_modified": "2021-07-16T22:31:16-07:00"
     },
     {
       "path": "talks_features.html",

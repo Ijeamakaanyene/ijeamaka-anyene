@@ -1946,27 +1946,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin: 16px 16px;
       text-decoration: none;
       display: flex;
+      flex-direction: row;
   }
   
   .card-body {
     padding: 2px 16px;
   }
   
-  .card-img {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    border-radius: 30px;
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
   }
   
-  .card-footer {
-    background-color: #000;
-    color: white;
-    text-align: right;
-    padding-right: 5px;
-  }
-  
-  
+  /*
   @media screen and (max-width: 992px) {
     .card {
       color: #474747;
@@ -1981,13 +1974,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
     
   }
+  */
   
   .icon-link {
       background-color: #FFFFFF;
       color: #000000;
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
-      border-radius: 0px; /* Rounded edges */
+      border-radius: 0px; 
   }
   
   .icon-link:hover {
@@ -2210,7 +2204,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1 id="computational-and-generative-art">Computational and generative art</h1>
 <div class="layout-chunk" data-layout="l-body">
 <div class="card">
-<img class="card-img-top" src="images/ZINE_COVER.png" style="width:300px;"/>
+<img class="card-img-top" src="images/ZINE_COVER.png"/>
 <div class="card-body">
 <h4>
 <a href="https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/">Radial Patterns in ggplot2</a>
@@ -2223,7 +2217,7 @@ A love letter to coord_polar() masquerading as a #rstats zine, 2021
 </div>
 </div>
 <div class="card">
-<img class="card-img-top" src="images/cloudscape_app.jpeg" style="width:300px;"/>
+<img class="card-img-top" src="images/cloudscape_app.jpeg"/>
 <div class="card-body">
 <h4>
 <a href="https://ijeamaka-a.shinyapps.io/cloudtopia_shinyapp/">Cloudscape</a>
@@ -2240,7 +2234,7 @@ a shiny app of a short looping video of a cloudscape, 2021
 <h1 id="data-visualizations">Data visualizations</h1>
 <div class="layout-chunk" data-layout="l-body">
 <div class="card">
-<img class="card-img-top" src="images/here_say_media.png" style="width:300px;"/>
+<img class="card-img-top" src="images/here_say_media.png"/>
 <div class="card-body">
 <h4>
 <a href="https://heresaymedia.org/chinatown-vaccine-rollout-lagging-rest-of-san-francisco/">Vaccine Rollout in San Francisco Neighborhoods</a>
@@ -2253,7 +2247,7 @@ Data visualization and analysis for Here Say Media, 2021
 </div>
 </div>
 <div class="card">
-<img class="card-img-top" src="images/2021_04_hbcus.png" style="width:300px;"/>
+<img class="card-img-top" src="images/2021_04_hbcus.png"/>
 <div class="card-body">
 <h4>
 <a href="https://github.com/Ijeamakaanyene/tidytuesday">TidyTuesday</a>
@@ -2266,7 +2260,7 @@ A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization
 </div>
 </div>
 <div class="card">
-<img class="card-img-top" src="https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png" style="width:300px;"/>
+<img class="card-img-top" src="https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png"/>
 <div class="card-body">
 <h4>
 <a href="https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/">COVID-19 Visualization</a>
@@ -2283,7 +2277,7 @@ An infectious disease natural history primer for U.C. Berkeley School of Public 
 <h1 id="shiny-apps-and-package-development">Shiny apps and package development</h1>
 <div class="layout-chunk" data-layout="l-body">
 <div class="card">
-<img class="card-img-top" src="images/logo.png" style="width:300px;"/>
+<img class="card-img-top" src="images/logo.png"/>
 <div class="card-body">
 <h4>
 <a href="https://ijeamaka-a.shinyapps.io/rtistry_gallery/">rtistry art gallery</a>
@@ -2296,7 +2290,7 @@ A celebration and showcase of art in all of its forms created by the #rstats com
 </div>
 </div>
 <div class="card">
-<img class="card-img-top" src="images/20210322212954.png" style="width:300px;"/>
+<img class="card-img-top" src="images/20210322212954.png"/>
 <div class="card-body">
 <h4>
 <a href="https://github.com/Ijeamakaanyene/contouR">{contouR}</a>
