@@ -95,27 +95,20 @@ d-appendix {
     margin: 16px 16px;
     text-decoration: none;
     display: flex;
+    flex-direction: row;
 }
 
 .card-body {
   padding: 2px 16px;
 }
 
-.card-img {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  border-radius: 30px;
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 40%;
 }
 
-.card-footer {
-  background-color: #000;
-  color: white;
-  text-align: right;
-  padding-right: 5px;
-}
-
-
+/*
 @media screen and (max-width: 992px) {
   .card {
     color: #474747;
@@ -130,3 +123,18 @@ d-appendix {
   }
   
 }
+*/
+
+.icon-link {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 3px 5px 3px 5px;
+    margin: 0 2px 0 2px;
+    border-radius: 0px; 
+}
+
+.icon-link:hover {
+    background-color: #89ac81;
+    color: #FFFFFF;
+}
+
