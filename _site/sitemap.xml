@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/</loc>
-    <lastmod>2021-04-17T01:15:03-07:00</lastmod>
+    <lastmod>2021-07-16T23:17:05-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/projects.html</loc>
-    <lastmod>2021-04-17T01:15:03-07:00</lastmod>
+    <lastmod>2021-07-16T23:17:05-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/talks.html</loc>
     <lastmod>2021-04-17T12:31:16-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ijeamaka-anyene.netlify.app/posts/2021-07-19-so-you-want-to-subdivide-a-rectangle/</loc>
+    <lastmod>2021-07-19T23:35:11-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/</loc>
