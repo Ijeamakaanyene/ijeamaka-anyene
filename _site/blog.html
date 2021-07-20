@@ -84,29 +84,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>ijeamaka anyene: portfolio</title>
+  <title>ijeamaka anyene: blog</title>
   
-  <meta property="description" itemprop="description" content="An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects."/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="ijeamaka anyene: portfolio"/>
+  <meta property="og:title" content="ijeamaka anyene: blog"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="ijeamaka anyene"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="ijeamaka anyene: portfolio"/>
-  <meta property="twitter:description" content="An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects."/>
+  <meta property="twitter:title" content="ijeamaka anyene: blog"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["portfolio"]},{"type":"character","attributes":{},"value":["An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects. \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css"]}},"value":[{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["blog"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["2021-07-19-so-you-want-to-subdivide-a-rectangle"]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2162,16 +2159,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="theme.css" type="text/css"/>
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"portfolio","description":"An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects.","authors":[]}
+{"title":"blog","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2182,7 +2178,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">ijeamaka anyene</a>
 </div>
 <div class="nav-right">
-<a href="portfolio.html">portfolio</a>
+<a href="projects.html">portfolio</a>
 <a href="talks_features.html">talks + features</a>
 <a href="blog.html">blog</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
@@ -2192,118 +2188,171 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="blog">blog</h1>
+<a href="posts/2021-07-19-so-you-want-to-subdivide-a-rectangle/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">July 19, 2021</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-07-19-so-you-want-to-subdivide-a-rectangle/so-you-want-to-subdivide-a-rectangle_files/figure-html5/unnamed-chunk-3-1.png"/>
+</div>
+<div class="description">
+<h2>So, you want to subdivide a quadrilateral</h2>
+<div class="dt-tags"></div>
+<p>A brief explanation of subdivision.</p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>portfolio</h1>
+<h1>blog</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects.</p>
+
 </div>
 
 
 <div class="d-article">
-<h1 id="computational-and-generative-art">Computational and generative art</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="card">
-<img class="card-img-top" src="images/ZINE_COVER.png"/>
-<div class="card-body">
-<h4>
-<a href="https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/">Radial Patterns in ggplot2</a>
-</h4>
-<p>
-A love letter to coord_polar() masquerading as a #rstats zine, 2021
-<br/>
-
-</p>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="images/cloudscape_app.jpeg"/>
-<div class="card-body">
-<h4>
-<a href="https://ijeamaka-a.shinyapps.io/cloudtopia_shinyapp/">Cloudscape</a>
-</h4>
-<p>
-a shiny app of a short looping video of a cloudscape, 2021
-<br/>
-
-</p>
-</div>
-</div>
-</div>
-<p><br><br></p>
-<h1 id="data-visualizations">Data visualizations</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="card">
-<img class="card-img-top" src="images/here_say_media.png"/>
-<div class="card-body">
-<h4>
-<a href="https://heresaymedia.org/chinatown-vaccine-rollout-lagging-rest-of-san-francisco/">Vaccine Rollout in San Francisco Neighborhoods</a>
-</h4>
-<p>
-Data visualization and analysis for Here Say Media, 2021
-<br/>
-
-</p>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="images/2021_04_hbcus.png"/>
-<div class="card-body">
-<h4>
-<a href="https://github.com/Ijeamakaanyene/tidytuesday">TidyTuesday</a>
-</h4>
-<p>
-A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using {ggplot2} and other extension packages, 2020
-<br/>
-
-</p>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png"/>
-<div class="card-body">
-<h4>
-<a href="https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/">COVID-19 Visualization</a>
-</h4>
-<p>
-An infectious disease natural history primer for U.C. Berkeley School of Public Health, 2020
-<br/>
-
-</p>
-</div>
-</div>
-</div>
-<p><br><br></p>
-<h1 id="shiny-apps-and-package-development">Shiny apps and package development</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="card">
-<img class="card-img-top" src="images/logo.png"/>
-<div class="card-body">
-<h4>
-<a href="https://ijeamaka-a.shinyapps.io/rtistry_gallery/">rtistry art gallery</a>
-</h4>
-<p>
-A celebration and showcase of art in all of its forms created by the #rstats community. An entry for the RStudio 2021 Shiny Competition, 2021
-<br/>
-
-</p>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="images/20210322212954.png"/>
-<div class="card-body">
-<h4>
-<a href="https://github.com/Ijeamakaanyene/contouR">{contouR}</a>
-</h4>
-<p>
-An R package for creating patterns using geom_contour(), 2021
-<br/>
-
-</p>
-</div>
-</div>
-</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

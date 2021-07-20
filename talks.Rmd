@@ -1,9 +1,0 @@
----
-title: "Talks + Zine"
-listing:
-  posts:
-    - 2021-01-14-art-ggplot-exploring-radial-visualizations
-    - 2021-01-04-radial-patterns-in-ggplot2
-    - 2020-12-08-tidytuesday
-    - 2020-10-22-workshop-an-introduction-to-ggplot2
----
