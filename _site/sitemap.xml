@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
+    <loc>https://ijeamaka-anyene.netlify.app/blog.html</loc>
+    <lastmod>2021-07-20T00:53:42-07:00</lastmod>
+  </url>
+  <url>
     <loc>https://ijeamaka-anyene.netlify.app/</loc>
-<<<<<<< HEAD
-    <lastmod>2021-07-16T23:17:05-07:00</lastmod>
+    <lastmod>2021-07-20T00:55:50-07:00</lastmod>
   </url>
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/projects.html</loc>
-    <lastmod>2021-07-16T23:17:05-07:00</lastmod>
-=======
-    <lastmod>2021-07-15T15:45:03-07:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/projects.html</loc>
-    <lastmod>2021-07-15T17:35:08-07:00</lastmod>
+    <loc>https://ijeamaka-anyene.netlify.app/portfolio.html</loc>
+    <lastmod>2021-07-20T00:55:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/talks_features.html</loc>
-    <lastmod>2021-07-15T15:54:49-07:00</lastmod>
->>>>>>> be0a43f5525ca566d83aca14b483dca72a89528b
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/talks.html</loc>
-    <lastmod>2021-04-17T12:31:16-07:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2021-07-19-so-you-want-to-subdivide-a-rectangle/</loc>
-    <lastmod>2021-07-19T23:35:11-07:00</lastmod>
+    <lastmod>2021-08-05T18:05:22-07:00</lastmod>
   </url>
   <url>
     <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/</loc>

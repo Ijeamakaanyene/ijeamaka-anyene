@@ -550,27 +550,20 @@
           margin: 16px 16px;
           text-decoration: none;
           display: flex;
+          flex-direction: row;
       }
       
       .card-body {
         padding: 2px 16px;
       }
       
-      .card-img {
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        border-radius: 30px;
+      .card-img-top {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 40%;
       }
       
-      .card-footer {
-        background-color: #000;
-        color: white;
-        text-align: right;
-        padding-right: 5px;
-      }
-      
-      
+      /*
       @media screen and (max-width: 992px) {
         .card {
           color: #474747;
@@ -585,13 +578,14 @@
         }
         
       }
+      */
       
       .icon-link {
           background-color: #FFFFFF;
           color: #000000;
           padding: 3px 5px 3px 5px;
           margin: 0 2px 0 2px;
-          border-radius: 0px; /* Rounded edges */
+          border-radius: 0px; 
       }
       
       .icon-link:hover {
@@ -765,7 +759,7 @@
       <a href="index.html" class="title">ijeamaka anyene</a>
       </div>
       <div class="nav-right">
-      <a href="projects.html">portfolio</a>
+      <a href="portfolio.html">portfolio</a>
       <a href="talks_features.html">talks + features</a>
       <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
       </div>

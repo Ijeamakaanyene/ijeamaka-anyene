@@ -9,7 +9,7 @@ navbar:
   search: false
   right:
     - text: "portfolio"
-      href: projects.html
+      href: portfolio.html
     - text: "talks + features"
       href: talks_features.html
 collections:

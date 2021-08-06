@@ -1946,27 +1946,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin: 16px 16px;
       text-decoration: none;
       display: flex;
+      flex-direction: row;
   }
   
   .card-body {
     padding: 2px 16px;
   }
   
-  .card-img {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    border-radius: 30px;
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
   }
   
-  .card-footer {
-    background-color: #000;
-    color: white;
-    text-align: right;
-    padding-right: 5px;
-  }
-  
-  
+  /*
   @media screen and (max-width: 992px) {
     .card {
       color: #474747;
@@ -1981,13 +1974,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
     
   }
+  */
   
   .icon-link {
       background-color: #FFFFFF;
       color: #000000;
       padding: 3px 5px 3px 5px;
       margin: 0 2px 0 2px;
-      border-radius: 0px; /* Rounded edges */
+      border-radius: 0px; 
   }
   
   .icon-link:hover {
@@ -2188,7 +2182,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">ijeamaka anyene</a>
 </div>
 <div class="nav-right">
-<a href="projects.html">portfolio</a>
+<a href="portfolio.html">portfolio</a>
 <a href="talks_features.html">talks + features</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2207,6 +2201,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<p><b>Spice up your standard charts</b> <br>Toronto Data Workshop, August 2021</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a href="" class="icon-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Coming soon!</a><a href="https://github.com/Ijeamakaanyene/spice_up_your_charts" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github-square"></i> Source Code</a></p>
+</div>
+<p><br></p>
 <p><b>aRt gallery: virtual art gallery</b> <br>useR! 2021 the R Conference, July 2021</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><a href="https://user2021.r-project.org/program/social/" class="icon-link" target="_blank" rel="noopener"><i class="fas fa-info"></i> useR Program Info</a></p>

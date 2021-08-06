@@ -16,6 +16,25 @@ library(distilltools)
 ```
 
 
+<b>Spice up your standard charts</b>
+<br>Toronto Data Workshop, August 2021
+
+```{r}
+icon_link(
+    icon = "fas fa-video",
+    text = "Coming soon!",
+    url  = ""
+)
+
+icon_link(
+    icon = "fab fa-github-square",
+    text = "Source Code",
+    url  = "https://github.com/Ijeamakaanyene/spice_up_your_charts"
+)
+```
+
+<br>
+
 <b>aRt gallery: virtual art gallery</b>
 <br>useR! 2021 the R Conference, July 2021
 
