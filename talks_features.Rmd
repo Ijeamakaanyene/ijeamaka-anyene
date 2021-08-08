@@ -22,8 +22,8 @@ library(distilltools)
 ```{r}
 icon_link(
     icon = "fas fa-video",
-    text = "Coming soon!",
-    url  = ""
+    text = "Recording",
+    url  = "https://www.youtube.com/watch?v=LlVf8foXUmM"
 )
 
 icon_link(
