@@ -1,0 +1,241 @@
+---
+title: "So, you want to subdivide a rectangle"
+description: |
+  A brief explanation of subdivision.
+author:
+  - name: Ijeamaka Anyene
+    url: https://twitter.com/ijeamaka_a
+date: 2021-09-07
+base_url: https://ijeamaka-anyene.netlify.app
+draft: FALSE
+preview: subdivision_space_moody_blue_0036.png
+twitter:
+    site: "@ijeamaka_a"
+    creator: "@ijeamaka_a"
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+## What is rectangle subdivision?
+
+In my approach to rectangle subdivision, you take a rectangle (or a square) and then you split or subdivide it along its longest side. Then you take your two new shapes and you subdivide both of them along their longest sides again. With rectangle subdivision, you can make the subdivision even or uneven and make the line of subdivision straight or angled. 
+
+`r emo::ji("notebook")`: this tutorial assumes knowledge of manipulating lists and using the packages dplyr and ggplot2. I am not asserting that this is the only or best way of approaching rectangle subdivision. This is just my personal approach.  
+
+## Why aren't you just giving us your code?
+
+I personally believe when people ask for my code, the true request is a desire to understand the approach that gave rise to my end product. Having my code just helps you recreate my work. Getting an understanding of how I approach polygon subdivision means you can implement or modify my approach in a way that best fits your needs. 
+
+## Set up
+To follow along with this post, you will need two packages: `{dplyr}` to create and manipulate your data and `{ggplot2}` to visualize the output. So lets load our libraries. 
+
+```{r, warning = FALSE, message = FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+I like to start with a nice decent sized rectangle and I create it using a tibble like so:
+
+```{r, eval = TRUE, echo=TRUE}
+rectangle = tibble(
+  x = c(1, 150, 150, 1),
+  y = c(1, 1, 125, 125)
+)
+```
+
+```{r, echo=FALSE}
+ggplot() +
+  geom_polygon(data = rectangle,
+               aes(x = x, y = y),
+               color = "black",
+               fill = NA) +
+  coord_equal()
+```
+
+## Find the vertices
+
+In order to subdivide your rectangle, you need to know the location of its vertices. In this post, I will refer to the vertices of each rectangle as `x1`-`x4` and `y1`-`y4`. These vertices are named counterclockwise, starting from the bottom left. For example, `x1` in the rectangle is located at (x = 1, y = 1) and `x2` is located at (x = 150, y = 1). 
+
+```{r, include = FALSE}
+rectangle_labeled = tibble(
+  x = c(1, 150, 150, 1),
+  y = c(1, 1, 125, 125),
+  group = rep(LETTERS[1], each = 4),
+  label = paste0("x", 1:4, ", ", "y", 1:4)
+)
+```
+
+```{r, echo = FALSE}
+ggplot(data = rectangle_labeled) +
+  geom_polygon(aes(x = x, y = y, group = group),
+               color = "black",
+               fill = NA) +
+  geom_text(aes(x = x, y = y,
+                label = label),
+            fontface = "bold",
+            size = 5,
+            nudge_x = c(-5, 5, 5, -5),
+            nudge_y = c(-5, -5, 5, 5)) +
+  coord_equal(clip = "off") +
+  xlim(-10, 170)
+```
+
+In order to quickly pull and access the vertices of each rectangle - I like to use a function I created called `get_vertices()`. This function takes in a dataframe that has a column `x` and a column `y` and then pulls the values from the dataframe into the relevent vertices variable within a list. This function works partially because I *always* create the rectangle dataframe in the order I discussed before, i.e. `x1` is always the first item in the x column and so forth. 
+
+```{r, eval = TRUE, echo = TRUE}
+get_vertices = function(df){
+  
+  vertices = list(
+    x1 = df$x[1],
+    y1 = df$y[1],
+    x2 = df$x[2],
+    y2 = df$y[2],
+    x3 = df$x[3],
+    y3 = df$y[3],
+    x4 = df$x[4],
+    y4 = df$y[4]
+    
+  )
+  
+  return(vertices)
+}
+
+```
+
+So lets apply `get_vertices()` to our initial rectangle dataframe to create a list of all the vertices.
+
+```{r, echo = TRUE}
+vertices = rectangle %>%
+  get_vertices()
+
+vertices
+```
+
+
+## Subdivide the rectangle
+
+In this example, we will do even subdivision which means that we will split our rectangle exactly in half. In this approach when we subdivide our rectangles, we want to do it along its longest side. This maximizes the amount of subdivisions you can do before your shapes become too small. In this case, the longest side is the horizontal width of the rectangle or the "x side". You can confirm the longest side by subtracting the vertices. 
+
+```{r}
+# Determines length of "x side"
+abs(vertices$x2 - vertices$x1)
+
+# Determines length of "y side"
+abs(vertices$y3 - vertices$y2)
+```
+
+`r emo::ji("light_bulb")`: you should use x2 and x1 to determine the length of x and y3 and y2 to determine the length of y. This is because based on how we defined the y vertices above, y1 is equal to y2 and y4 is equal to y3. See below!
+
+```{r}
+vertices$y1 == vertices$y2
+vertices$y3 == vertices$y4
+```
+
+Since we are splitting our rectangle exactly in half, we need to find the midpoint between `x1` and `x2`. The best way to do so is to use the midpoint formula: 
+$$ (x, y) = (x_1 + x_2)/ 2 , (y_1 + y_2)/2$$
+
+Because we only want the midpoint for the x coordinates for this instance (because the x is the longest side), we can simplify the formula and only use the following: 
+
+```{r}
+midpoint = (vertices$x1 + vertices$x2) / 2
+```
+
+So now we have an additional coordinate in our rectangle available to us. We have `x1`-`x4`, `y1`-`y4`, and the midpoint of x. Lets visualize it! Below is our original rectangle, but now the location of the midpoint is labeled.
+
+```{r, include = FALSE}
+rectangle_labeled = tibble(
+  x = c(1, midpoint, 150, 150, midpoint, 1),
+  y = c(1, 1, 1, 125, 125, 125),
+  label = c("x1, y1", "midpoint", "x2, y2",
+            "x3, y3", "midpoint", "x4, y4")
+)
+```
+
+```{r, echo = FALSE}
+ggplot(data = rectangle_labeled) +
+  geom_polygon(aes(x = x, y = y),
+               color = "black",
+               fill = NA) +
+  geom_point(aes(x = x, y = y),
+               color = "black",
+               fill = NA) +
+  geom_segment(aes(x = midpoint, xend = midpoint,
+                   y = 1, yend = 120),
+               linetype = "dashed") +
+  geom_text(aes(x = x, y = y,
+                label = label),
+            fontface = "bold",
+            size = 5,
+            nudge_x = c(-5, 0, 5, 5, 0, -5),
+            nudge_y = c(-5, -5, -5, 5, 5, 5)) +
+  coord_equal() +
+  xlim(-10, 170)
+```
+
+My personal approach to subdivision is a "find and replace" approach. There are other approaches but this best fits my mental model regarding shapes. 
+
+The above rectangle needs to be split into two rectangles using the midpoint as a new vertex. Therefore, the leftmost rectangle new coordinates will be (going counterclockwise): 1) (x1, y1), 2) (midpoint, y2), 3) (midpoint, y3), 4) (x4, y4). The y vertices do not need to change - but the `x2` and `x3` vertices need to be updated to the midpoint. 
+
+Then the rightmost rectangle's new coordinates will be: 1) (midpoint, y1), 2) (x2, y2), 3) (x3, y3), and 4) (midpoint, y4)
+
+I do so by creating a new dataframe for the rectangles using the coordinates as laid out above. 
+
+```{r}
+new_rectangle = list()
+
+# LEFTMOST RECTANGLE
+new_rectangle[[1]] = tibble(
+  x = c(vertices$x1, midpoint, midpoint, vertices$x4),
+  y = c(vertices$y1, vertices$y2, vertices$y3, vertices$y4),
+  group = LETTERS[1]
+)
+
+# RIGHTMOST RECTANGLE
+new_rectangle[[2]] = tibble(
+  x = c(midpoint, vertices$x2, vertices$x3, midpoint),
+  y = c(vertices$y1, vertices$y2, vertices$y3, vertices$y4),
+  group = LETTERS[2]
+)
+
+# Using bind_rows() to combine into a dataframe
+final_rectangles = bind_rows(new_rectangle)
+```
+
+`r emo::ji("light_bulb")`: When you have a dataframe with multiple polygons, the way to tell ggplot2 to distinguish between them is to use a group variable. The group variable lets ggplot2 know, these set of coordinates are part of group A and then these other set of coordinates are part of group B, and so forth. I like to use the `LETTERS` vector that comes with base R for my groups. 
+
+## Gaze upon your new rectangles
+
+So our new data frame should contain the x, y vertices for two rectangles and they each should have their own group (group A and group B).
+
+```{r, echo = FALSE}
+final_rectangles %>%
+  knitr::kable()
+```
+
+This dataframe when used in `geom_polygon()` allows us to have an output of our two new rectangles. 
+
+```{r}
+ggplot() +
+  geom_polygon(data = final_rectangles,
+               aes(x = x, y = y, 
+                   group = group),
+               size = 2,
+               fill = NA,
+               color = "black") +
+  coord_equal()
+```
+
+Et voila `r emo::ji("sparkles")`! You then repeat the above process for as many subdivision iterations as you would want. I personally have all of the above in a series of functions that allow me to continue to subdivide the rectangle, until I reach the number of desired iterations. Happy subdividing!
+
+
+
+
+
+
+
+
+
+
+
+
