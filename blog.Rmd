@@ -2,5 +2,5 @@
 title: "blog"
 listing:
   posts:
-    - 2021-07-19-so-you-want-to-subdivide-a-rectangle
+    - 2021-09-07-so-you-want-to-subdivide-a-rectangle
 ---

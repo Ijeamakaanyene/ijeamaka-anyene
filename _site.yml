@@ -12,6 +12,8 @@ navbar:
       href: portfolio.html
     - text: "talks + features"
       href: talks_features.html
+    - text: "blog"
+      href: "blog.html"
 collections:
   posts:
     categories: true
