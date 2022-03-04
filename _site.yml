@@ -8,12 +8,10 @@ google_analytics: "G-YNW2MDRE2W"
 navbar:
   search: false
   right:
-    - text: "portfolio"
-      href: portfolio.html
-    - text: "talks + features"
-      href: talks_features.html
     - text: "blog"
-      href: "blog.html"
+      href: blog.html
+    - text: "portfolio"
+      href: "https://ijeamaka-art.netlify.app/portfolio/"
 collections:
   posts:
     categories: true

@@ -19,28 +19,6 @@
     "preview_height": 3000
   },
   {
-    "path": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/",
-    "title": "aRt + ggplot: exploring radial visualizations",
-    "description": "Computational art techniques can inform and spice up your data visualizations. A presentation for R-Ladies Johannesburg & Tunis (Jan 2021) and R-Ladies Santa Barbara (April 2021).",
-    "author": [
-      {
-        "name": "Ijeamaka Anyene",
-        "url": "https://twitter.com/ijeamaka_a"
-      }
-    ],
-    "date": "2021-01-14",
-    "categories": [
-      "computational art",
-      "presentation"
-    ],
-    "contents": "\naRt + ggplot: exploring radial visualizations\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\nEvent: R-Ladies Johannesburg & Tunis Joint MeetupDate: January 14th, 2021\nEvent: R-Ladies Santa Barbara Date: April 14th, 2021YouTube RecordingGithub Source Code\n\n\n\n",
-    "preview": "posts/2021-01-14-art-ggplot-exploring-radial-visualizations/cover_image.png",
-    "last_modified": "2021-04-17T01:15:03-07:00",
-    "input_file": {},
-    "preview_width": 2799,
-    "preview_height": 1576
-  },
-  {
     "path": "posts/2021-01-04-radial-patterns-in-ggplot2/",
     "title": "Radial Patterns in ggplot2",
     "description": "A love letter to coord_polar() masquerading as a #rstats zine",
@@ -83,25 +61,5 @@
     "input_file": {},
     "preview_width": 1891,
     "preview_height": 1064
-  },
-  {
-    "path": "posts/2020-04-16-covid-19-visualization/",
-    "title": "COVID-19 Visualization",
-    "description": "An infectious disease natural history primer for the public",
-    "author": [
-      {
-        "name": "Ijeamaka Anyene",
-        "url": "https://twitter.com/ijeamaka_a"
-      }
-    ],
-    "date": "2020-04-16",
-    "categories": [
-      "data visualization",
-      "portfolio"
-    ],
-    "contents": "\nManaging the COVID-19 Pandemic Course\nU.C. Berkeley School of Public Health has an online, self-paced course to provide the public a comprehensive understanding of the COVID-19 pandemic.\nAs part of this course, Dr. Sandi McCoy gave a lecture regarding proven interventions and and what we know works. To support this presentation, I created a visualization how the natural history of some of the most commonly known pathogens changes the mitigation and control strategies that are effective.\n\n\n\nThis course can be found here.\n\n\n\n",
-    "preview": "https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png",
-    "last_modified": "2020-12-08T23:24:02-08:00",
-    "input_file": {}
   }
 ]

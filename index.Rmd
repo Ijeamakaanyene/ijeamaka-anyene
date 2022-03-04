@@ -12,9 +12,11 @@ links:
     url: "https://www.etsy.com/shop/ArtSnacksPrints"
   - label: Email
     url: "mailto:ijeamaka.anyene@gmail.com"
+  - label: Portfolio
+    url: "https://ijeamaka-art.netlify.app/portfolio/"
 site: distill::distill_website
 output:
   postcards::jolla
 ---
 
-Hey there, I'm Ijeamaka. I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 
+Hey there, I'm Ijeamaka. Welcome to my blog site! I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. If you are looking for my portfolio, check out the link below. 
