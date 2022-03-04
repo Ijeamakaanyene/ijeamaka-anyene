@@ -13,7 +13,7 @@ links:
   - label: Email
     url: "mailto:ijeamaka.anyene@gmail.com"
   - label: Portfolio
-    url: "https://ijeamaka-art.netlify.app/portfolio/"
+    url: "https://ijeamaka.art/portfolio/"
 site: distill::distill_website
 output:
   postcards::jolla
